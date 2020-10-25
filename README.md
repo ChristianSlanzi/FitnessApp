@@ -1,4 +1,4 @@
 # FitnessApp
 
 ### Status
-[![Build Status](https://travis-ci.com/github/ChristianSlanzi/FitnessApp.png)](https://travis-ci.com/github/ChristianSlanzi/FitnessApp)
+[![Build Status](https://travis-ci.com/ChristianSlanzi/FitnessApp.svg?branch=main)](https://travis-ci.com/ChristianSlanzi/FitnessApp)
