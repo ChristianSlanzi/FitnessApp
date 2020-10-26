@@ -1,0 +1,21 @@
+source 'https://github.com/christianslanzi/Specs.git'
+
+platform :ios, '13.0'
+
+workspace 'FitnessApp.xcworkspace'
+
+target 'FitnessApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FitnessApp
+    pod 'CS_Common_Utils', git: 'https://github.com/christianslanzi/CS_Common_Utils.git'
+    pod 'CS_Common_UI', git: 'https://github.com/christianslanzi/CS_Common_UI.git'
+      
+
+  target 'FitnessAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
