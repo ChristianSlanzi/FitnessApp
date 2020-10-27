@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		24379A9825458A7F008B1E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24379A9625458A7F008B1E26 /* LaunchScreen.storyboard */; };
 		24379AA325458A7F008B1E26 /* FitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379AA225458A7F008B1E26 /* FitnessAppTests.swift */; };
 		24379AAE25458A7F008B1E26 /* FitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379AAD25458A7F008B1E26 /* FitnessAppUITests.swift */; };
+		24AD864325475D1F00C57EDC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 24AD864225475D1F00C57EDC /* README.md */; };
 		6D9A2964157F530C1EB5054F /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9B6528413D883439C55EB /* Pods_FitnessApp.framework */; };
 		F2F076B9B123EB2C2BBB8D68 /* Pods_FitnessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905147CFC728A1853084E00D /* Pods_FitnessAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		24379AA925458A7F008B1E26 /* FitnessAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24379AAD25458A7F008B1E26 /* FitnessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAppUITests.swift; sourceTree = "<group>"; };
 		24379AAF25458A7F008B1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24AD864225475D1F00C57EDC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		318967FF723418B00BD506CB /* Pods-FitnessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.release.xcconfig"; path = "Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		50DE087F87EB8A3E822FBBCF /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 		905147CFC728A1853084E00D /* Pods_FitnessAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +91,7 @@
 		24379A7F25458A7C008B1E26 = {
 			isa = PBXGroup;
 			children = (
+				24AD864225475D1F00C57EDC /* README.md */,
 				24379A8A25458A7C008B1E26 /* FitnessApp */,
 				24379AA125458A7F008B1E26 /* FitnessAppTests */,
 				24379AAC25458A7F008B1E26 /* FitnessAppUITests */,
@@ -148,7 +151,6 @@
 				1B5B9C6388CDE4CE733CA37F /* Pods-FitnessAppTests.debug.xcconfig */,
 				318967FF723418B00BD506CB /* Pods-FitnessAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -269,6 +271,7 @@
 			files = (
 				24379A9825458A7F008B1E26 /* LaunchScreen.storyboard in Resources */,
 				24379A9525458A7F008B1E26 /* Assets.xcassets in Resources */,
+				24AD864325475D1F00C57EDC /* README.md in Resources */,
 				24379A9325458A7C008B1E26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

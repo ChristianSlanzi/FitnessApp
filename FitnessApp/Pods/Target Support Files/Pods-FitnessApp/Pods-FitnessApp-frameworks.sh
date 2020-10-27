@@ -163,10 +163,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CS_Common_UI/CS_Common_UI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CS_Common_Utils/CS_Common_Utils.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Overture/Overture.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CS_Common_UI/CS_Common_UI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CS_Common_Utils/CS_Common_Utils.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Overture/Overture.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

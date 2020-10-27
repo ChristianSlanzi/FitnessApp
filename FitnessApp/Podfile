@@ -1,4 +1,5 @@
 source 'https://github.com/christianslanzi/Specs.git'
+source 'https://github.com/CocoaPods/Specs/blob/master/Specs/3/e/8/Overture/0.5.0/Overture.podspec.json'
 
 platform :ios, '13.0'
 
@@ -11,6 +12,7 @@ target 'FitnessApp' do
   # Pods for FitnessApp
     pod 'CS_Common_Utils', git: 'https://github.com/christianslanzi/CS_Common_Utils.git'
     pod 'CS_Common_UI', git: 'https://github.com/christianslanzi/CS_Common_UI.git'
+    pod 'Overture'
       
 
   target 'FitnessAppTests' do
