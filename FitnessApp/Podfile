@@ -13,6 +13,7 @@ target 'FitnessApp' do
     pod 'CS_Common_Utils', git: 'https://github.com/christianslanzi/CS_Common_Utils.git'
     pod 'CS_Common_UI', git: 'https://github.com/christianslanzi/CS_Common_UI.git'
     pod 'Overture'
+    pod 'RealmSwift', '~> 3.20.0'
       
 
   target 'FitnessAppTests' do

@@ -3,15 +3,23 @@ PODS:
     - CS_Common_Utils (~> 0.1.3)
   - CS_Common_Utils (0.1.5)
   - Overture (0.5.0)
+  - Realm (3.20.0):
+    - Realm/Headers (= 3.20.0)
+  - Realm/Headers (3.20.0)
+  - RealmSwift (3.20.0):
+    - Realm (= 3.20.0)
 
 DEPENDENCIES:
   - CS_Common_UI (from `https://github.com/christianslanzi/CS_Common_UI.git`)
   - CS_Common_Utils (from `https://github.com/christianslanzi/CS_Common_Utils.git`)
   - Overture
+  - RealmSwift (~> 3.20.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Overture
+    - Realm
+    - RealmSwift
 
 EXTERNAL SOURCES:
   CS_Common_UI:
@@ -31,7 +39,9 @@ SPEC CHECKSUMS:
   CS_Common_UI: 70939f61dba6c5e4ec923f7ae4ddffa69496f17e
   CS_Common_Utils: 69d9ec666302fcf7334977df3b8e3a6ee2d7c3e4
   Overture: 2e6252ead5da6d3347f758047f27a31cb469d59d
+  Realm: 8b2ca5bc6479a91f379b6b42b5922e396cd5ba5a
+  RealmSwift: 1949ef26a279e1845bd51d591b9103adfcd121df
 
-PODFILE CHECKSUM: 35966f27f186820a3aac230df01966fd5f23c19c
+PODFILE CHECKSUM: 6c1b7d6d6fed2592093cd09b2372bee4754a87ed
 
 COCOAPODS: 1.8.4
