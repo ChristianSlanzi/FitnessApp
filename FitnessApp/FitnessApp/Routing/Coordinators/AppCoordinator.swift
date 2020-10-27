@@ -32,7 +32,16 @@ final class AppCoordinator: Coordinator {
     }
 
     func start() {
-        // TODO: create start controller.
+        let rootVC = LoadingViewController()
+        rootVC.bgImageName = "Background"
+        rootVC.coordinator = self
+        navigationController.pushViewController(rootVC, animated: true)
+    }
+}
+
+extension AppCoordinator: MovingToNextVC {
+    func next() {
+        // TODO: create and push next VC
     }
 }
 
