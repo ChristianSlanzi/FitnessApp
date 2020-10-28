@@ -41,7 +41,12 @@ final class AppCoordinator: Coordinator {
 
 extension AppCoordinator: MovingToNextVC {
     func next() {
-        // TODO: create and push next VC
+        let isOnboardingCompleted = AppSettingsManager.isOnboardingCompleted()
+        if isOnboardingCompleted {
+            // TODO: show login or main screen
+        } else {
+            // TODO: show onboarding screen
+        }
     }
 }
 
