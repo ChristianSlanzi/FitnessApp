@@ -16,6 +16,10 @@
 		24379AA325458A7F008B1E26 /* FitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379AA225458A7F008B1E26 /* FitnessAppTests.swift */; };
 		24379AAE25458A7F008B1E26 /* FitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379AAD25458A7F008B1E26 /* FitnessAppUITests.swift */; };
 		246C81EA25499D5D009AD69F /* AppSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C81E925499D5D009AD69F /* AppSettingsManager.swift */; };
+		246C81F52549ADDB009AD69F /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C81F42549ADDB009AD69F /* AppDataManager.swift */; };
+		246C82042549AF46009AD69F /* OnBoardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C82032549AF46009AD69F /* OnBoardingData.swift */; };
+		246C820C2549AF5D009AD69F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C820B2549AF5D009AD69F /* OnBoardingViewController.swift */; };
+		246C82112549B014009AD69F /* OnBoardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C82102549B014009AD69F /* OnBoardingPage.swift */; };
 		24A076FC2548D34600EE111F /* CS_CoreModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24A076FA2548D34600EE111F /* CS_CoreModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24A076FF2548D34600EE111F /* CS_CoreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A076F82548D34600EE111F /* CS_CoreModule.framework */; };
 		24A077002548D34600EE111F /* CS_CoreModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24A076F82548D34600EE111F /* CS_CoreModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -84,6 +88,10 @@
 		24379AAD25458A7F008B1E26 /* FitnessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAppUITests.swift; sourceTree = "<group>"; };
 		24379AAF25458A7F008B1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		246C81E925499D5D009AD69F /* AppSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
+		246C81F42549ADDB009AD69F /* AppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataManager.swift; sourceTree = "<group>"; };
+		246C82032549AF46009AD69F /* OnBoardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingData.swift; sourceTree = "<group>"; };
+		246C820B2549AF5D009AD69F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		246C82102549B014009AD69F /* OnBoardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
 		24A076F82548D34600EE111F /* CS_CoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CS_CoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A076FA2548D34600EE111F /* CS_CoreModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CS_CoreModule.h; sourceTree = "<group>"; };
 		24A076FB2548D34600EE111F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,6 +171,7 @@
 		24379A8A25458A7C008B1E26 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				246C81F12549AD58009AD69F /* Data */,
 				246C81E725499D34009AD69F /* Services */,
 				24A077182548D60A00EE111F /* Routing */,
 				24A0771C2548D97E00EE111F /* Screens */,
@@ -210,6 +219,48 @@
 				246C81E925499D5D009AD69F /* AppSettingsManager.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		246C81F12549AD58009AD69F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				246C81F22549AD79009AD69F /* Stub */,
+				246C81F32549AD83009AD69F /* Model */,
+				246C81F42549ADDB009AD69F /* AppDataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		246C81F22549AD79009AD69F /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		246C81F32549AD83009AD69F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		246C82022549AEA0009AD69F /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				246C82152549B01A009AD69F /* Model */,
+				246C820B2549AF5D009AD69F /* OnBoardingViewController.swift */,
+				246C82102549B014009AD69F /* OnBoardingPage.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		246C82152549B01A009AD69F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				246C82032549AF46009AD69F /* OnBoardingData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		24A076F92548D34600EE111F /* CS_CoreModule */ = {
@@ -267,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				24A0771E2548D9A100EE111F /* Loading */,
+				246C82022549AEA0009AD69F /* OnBoarding */,
 			);
 			path = Setup;
 			sourceTree = "<group>";
@@ -560,10 +612,14 @@
 				24A077112548D44400EE111F /* AppCoordinator.swift in Sources */,
 				24379A9025458A7C008B1E26 /* ViewController.swift in Sources */,
 				24A077202548D9BF00EE111F /* LoadingViewController.swift in Sources */,
+				246C82042549AF46009AD69F /* OnBoardingData.swift in Sources */,
 				246C81EA25499D5D009AD69F /* AppSettingsManager.swift in Sources */,
+				246C81F52549ADDB009AD69F /* AppDataManager.swift in Sources */,
+				246C82112549B014009AD69F /* OnBoardingPage.swift in Sources */,
 				24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */,
 				24A0773C2548DC7400EE111F /* MovingToNextVC.swift in Sources */,
 				24379A8E25458A7C008B1E26 /* SceneDelegate.swift in Sources */,
+				246C820C2549AF5D009AD69F /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

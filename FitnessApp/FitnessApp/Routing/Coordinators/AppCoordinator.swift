@@ -45,7 +45,11 @@ extension AppCoordinator: MovingToNextVC {
         if isOnboardingCompleted {
             // TODO: show login or main screen
         } else {
-            // TODO: show onboarding screen
+            // show onboarding
+            let controller = OnBoardingViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+            controller.onBoardingData = FitGoalDataManager.shared.getOnBoardingData()
+            controller.coordinator = self
+            navigationController.pushViewController(controller, animated: true)
         }
     }
 }
