@@ -1,5 +1,5 @@
 source 'https://github.com/christianslanzi/Specs.git'
-source 'git@github.com:CocoaPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
 
 #source 'https://github.com/CocoaPods/Specs/blob/master/Specs/3/e/8/Overture/0.5.0/Overture.podspec.json'
 
