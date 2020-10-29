@@ -37,6 +37,13 @@
 		24534402254B785900726E8F /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24534401254B785900726E8F /* UserDTO.swift */; };
 		24534407254B789900726E8F /* UserAccountDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24534406254B789900726E8F /* UserAccountDTO.swift */; };
 		2453440C254B78C500726E8F /* UserProfileDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453440B254B78C500726E8F /* UserProfileDTO.swift */; };
+		24534412254B7B3900726E8F /* ProfileCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24534411254B7B3900726E8F /* ProfileCreationViewController.swift */; };
+		2453441C254B7CB700726E8F /* ProfileCreationWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24534416254B7CB700726E8F /* ProfileCreationWizard.swift */; };
+		2453441D254B7CB700726E8F /* InputContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24534417254B7CB700726E8F /* InputContentView.swift */; };
+		2453441E254B7CB700726E8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24534418254B7CB700726E8F /* ContentView.swift */; };
+		2453441F254B7CB700726E8F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24534419254B7CB700726E8F /* HeaderView.swift */; };
+		24534420254B7CB700726E8F /* ProfileCreationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453441A254B7CB700726E8F /* ProfileCreationPage.swift */; };
+		24534421254B7CB700726E8F /* ProfileQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453441B254B7CB700726E8F /* ProfileQuestion.swift */; };
 		246C81EA25499D5D009AD69F /* AppSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C81E925499D5D009AD69F /* AppSettingsManager.swift */; };
 		246C81F52549ADDB009AD69F /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C81F42549ADDB009AD69F /* AppDataManager.swift */; };
 		246C82042549AF46009AD69F /* OnBoardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C82032549AF46009AD69F /* OnBoardingData.swift */; };
@@ -132,6 +139,13 @@
 		24534401254B785900726E8F /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
 		24534406254B789900726E8F /* UserAccountDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountDTO.swift; sourceTree = "<group>"; };
 		2453440B254B78C500726E8F /* UserProfileDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDTO.swift; sourceTree = "<group>"; };
+		24534411254B7B3900726E8F /* ProfileCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCreationViewController.swift; sourceTree = "<group>"; };
+		24534416254B7CB700726E8F /* ProfileCreationWizard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCreationWizard.swift; sourceTree = "<group>"; };
+		24534417254B7CB700726E8F /* InputContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputContentView.swift; sourceTree = "<group>"; };
+		24534418254B7CB700726E8F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24534419254B7CB700726E8F /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		2453441A254B7CB700726E8F /* ProfileCreationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCreationPage.swift; sourceTree = "<group>"; };
+		2453441B254B7CB700726E8F /* ProfileQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileQuestion.swift; sourceTree = "<group>"; };
 		246C81E925499D5D009AD69F /* AppSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
 		246C81F42549ADDB009AD69F /* AppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataManager.swift; sourceTree = "<group>"; };
 		246C82032549AF46009AD69F /* OnBoardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingData.swift; sourceTree = "<group>"; };
@@ -425,6 +439,28 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		24534410254B7B0200726E8F /* ProfileCreation */ = {
+			isa = PBXGroup;
+			children = (
+				24534418254B7CB700726E8F /* ContentView.swift */,
+				24534419254B7CB700726E8F /* HeaderView.swift */,
+				24534417254B7CB700726E8F /* InputContentView.swift */,
+				2453441A254B7CB700726E8F /* ProfileCreationPage.swift */,
+				24534416254B7CB700726E8F /* ProfileCreationWizard.swift */,
+				2453441B254B7CB700726E8F /* ProfileQuestion.swift */,
+				24534411254B7B3900726E8F /* ProfileCreationViewController.swift */,
+			);
+			path = ProfileCreation;
+			sourceTree = "<group>";
+		};
+		24534425254B7FC700726E8F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				246C81F42549ADDB009AD69F /* AppDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		246C81E725499D34009AD69F /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,9 +480,9 @@
 		246C81F12549AD58009AD69F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				24534425254B7FC700726E8F /* Manager */,
 				246C81F22549AD79009AD69F /* Stub */,
 				246C81F32549AD83009AD69F /* Model */,
-				246C81F42549ADDB009AD69F /* AppDataManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -547,6 +583,7 @@
 				246C82022549AEA0009AD69F /* OnBoarding */,
 				244E9426254B2799008AE146 /* Login */,
 				245343C6254B6CC300726E8F /* Signup */,
+				24534410254B7B0200726E8F /* ProfileCreation */,
 			);
 			path = Setup;
 			sourceTree = "<group>";
@@ -844,17 +881,22 @@
 				24534402254B785900726E8F /* UserDTO.swift in Sources */,
 				24A077112548D44400EE111F /* AppCoordinator.swift in Sources */,
 				24379A9025458A7C008B1E26 /* ViewController.swift in Sources */,
+				2453441C254B7CB700726E8F /* ProfileCreationWizard.swift in Sources */,
 				245343F0254B723E00726E8F /* Storable.swift in Sources */,
 				245343F8254B723E00726E8F /* User.swift in Sources */,
 				246C82422549CADC009AD69F /* CreatingAccount.swift in Sources */,
+				2453441D254B7CB700726E8F /* InputContentView.swift in Sources */,
 				24534407254B789900726E8F /* UserAccountDTO.swift in Sources */,
 				245343F3254B723E00726E8F /* Sorted.swift in Sources */,
 				2453440C254B78C500726E8F /* UserProfileDTO.swift in Sources */,
 				24A077202548D9BF00EE111F /* LoadingViewController.swift in Sources */,
 				245343F4254B723E00726E8F /* CoreDataManager.swift in Sources */,
 				245343F6254B723E00726E8F /* RealmDataManager.swift in Sources */,
+				2453441E254B7CB700726E8F /* ContentView.swift in Sources */,
+				24534421254B7CB700726E8F /* ProfileQuestion.swift in Sources */,
 				246C82042549AF46009AD69F /* OnBoardingData.swift in Sources */,
 				246C81EA25499D5D009AD69F /* AppSettingsManager.swift in Sources */,
+				2453441F254B7CB700726E8F /* HeaderView.swift in Sources */,
 				246C81F52549ADDB009AD69F /* AppDataManager.swift in Sources */,
 				246C82112549B014009AD69F /* OnBoardingPage.swift in Sources */,
 				245343F1254B723E00726E8F /* URL+Document.swift in Sources */,
@@ -862,10 +904,12 @@
 				245343EF254B723E00726E8F /* MappableProtocol.swift in Sources */,
 				245343EE254B723E00726E8F /* DataManager.swift in Sources */,
 				245343F7254B723E00726E8F /* RealmProvider.swift in Sources */,
+				24534420254B7CB700726E8F /* ProfileCreationPage.swift in Sources */,
 				245343FD254B776200726E8F /* Gender.swift in Sources */,
 				245343C8254B6CE200726E8F /* SignupViewController.swift in Sources */,
 				245343ED254B723E00726E8F /* BaseRepository.swift in Sources */,
 				24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */,
+				24534412254B7B3900726E8F /* ProfileCreationViewController.swift in Sources */,
 				24A0773C2548DC7400EE111F /* MovingToNextVC.swift in Sources */,
 				24379A8E25458A7C008B1E26 /* SceneDelegate.swift in Sources */,
 				244E9428254B27BB008AE146 /* LoginViewController.swift in Sources */,

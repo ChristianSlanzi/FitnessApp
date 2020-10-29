@@ -61,7 +61,7 @@ extension AppCoordinator: MovingToNextVC {
         } else {
             // show onboarding
             let controller = OnBoardingViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
-            controller.onBoardingData = FitGoalDataManager.shared.getOnBoardingData()
+            controller.onBoardingData = AppDataManager.shared.getOnBoardingData()
             controller.coordinator = self
             navigationController.pushViewController(controller, animated: true)
         }
@@ -93,7 +93,11 @@ extension AppCoordinator: CreatingAccount {
     }
     
     func showProfileCreation() {
-        //TODO
+        let controller = ProfileCreationViewController(dataManager: AppDataManager.shared)
+        controller.bgImageName = "Background"
+        
+        controller.signupCoordinator = self
+        navigationController.pushViewController(controller, animated: true)
     }
     
     func showHomeVC() {
