@@ -20,6 +20,7 @@
 		246C82042549AF46009AD69F /* OnBoardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C82032549AF46009AD69F /* OnBoardingData.swift */; };
 		246C820C2549AF5D009AD69F /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C820B2549AF5D009AD69F /* OnBoardingViewController.swift */; };
 		246C82112549B014009AD69F /* OnBoardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C82102549B014009AD69F /* OnBoardingPage.swift */; };
+		246C82422549CADC009AD69F /* CreatingAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C82412549CADC009AD69F /* CreatingAccount.swift */; };
 		24A076FC2548D34600EE111F /* CS_CoreModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24A076FA2548D34600EE111F /* CS_CoreModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24A076FF2548D34600EE111F /* CS_CoreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A076F82548D34600EE111F /* CS_CoreModule.framework */; };
 		24A077002548D34600EE111F /* CS_CoreModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24A076F82548D34600EE111F /* CS_CoreModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -92,6 +93,7 @@
 		246C82032549AF46009AD69F /* OnBoardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingData.swift; sourceTree = "<group>"; };
 		246C820B2549AF5D009AD69F /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		246C82102549B014009AD69F /* OnBoardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
+		246C82412549CADC009AD69F /* CreatingAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingAccount.swift; sourceTree = "<group>"; };
 		24A076F82548D34600EE111F /* CS_CoreModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CS_CoreModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A076FA2548D34600EE111F /* CS_CoreModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CS_CoreModule.h; sourceTree = "<group>"; };
 		24A076FB2548D34600EE111F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				24A0773B2548DC7400EE111F /* MovingToNextVC.swift */,
+				246C82412549CADC009AD69F /* CreatingAccount.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 			files = (
 				24A077112548D44400EE111F /* AppCoordinator.swift in Sources */,
 				24379A9025458A7C008B1E26 /* ViewController.swift in Sources */,
+				246C82422549CADC009AD69F /* CreatingAccount.swift in Sources */,
 				24A077202548D9BF00EE111F /* LoadingViewController.swift in Sources */,
 				246C82042549AF46009AD69F /* OnBoardingData.swift in Sources */,
 				246C81EA25499D5D009AD69F /* AppSettingsManager.swift in Sources */,

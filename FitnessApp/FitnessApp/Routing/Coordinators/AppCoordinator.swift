@@ -37,13 +37,26 @@ final class AppCoordinator: Coordinator {
         rootVC.coordinator = self
         navigationController.pushViewController(rootVC, animated: true)
     }
+    
+    func startMainTabBarController() {
+        //TODO
+    }
 }
 
 extension AppCoordinator: MovingToNextVC {
     func next() {
         let isOnboardingCompleted = AppSettingsManager.isOnboardingCompleted()
         if isOnboardingCompleted {
-            // TODO: show login or main screen
+            // show login or main screen
+            
+            //TODO: import CS_LoginManager
+            let isLoggedIn = false //LoginManager.getUserID() != nil
+                
+            if isLoggedIn {
+                startMainTabBarController()
+            } else {
+                showLoginVC()
+            }
         } else {
             // show onboarding
             let controller = OnBoardingViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
@@ -52,6 +65,28 @@ extension AppCoordinator: MovingToNextVC {
             navigationController.pushViewController(controller, animated: true)
         }
     }
+}
+
+extension AppCoordinator: CreatingAccount {
+    func showLoginVC() {
+        //TODO
+    }
+    
+    func showSignupVC() {
+        //TODO
+    }
+    func showCreateAccountVC() {
+        //TODO
+    }
+    
+    func showProfileCreation() {
+        //TODO
+    }
+    
+    func showHomeVC() {
+        startMainTabBarController()
+    }
+    
 }
 
 // MARK: - UIWindow Extension
