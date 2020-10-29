@@ -2,15 +2,15 @@
 # * https://www.objc.io/issues/6-build-tools/travis-ci/
 # * https://github.com/supermarin/xcpretty#usage
 
-language: swift
-osx_image: xcode12.2
-xcode_workspace: FitnessApp.xcworkspace
-xcode_scheme: FitnessApp
-xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro Max
-before_install:
-- gem install cocoapods
-- cd FitnessApp
-- pod install --no-repo-update
+#language: swift
+#osx_image: xcode12.2
+#xcode_workspace: FitnessApp.xcworkspace
+#xcode_scheme: FitnessApp
+#xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro Max
+#before_install:
+#- gem install cocoapods
+#- cd FitnessApp
+#- pod install --no-repo-update
 
 # osx_image: xcode12.2
 # language: swift
