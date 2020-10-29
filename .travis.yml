@@ -10,7 +10,7 @@ podfile: FitnessApp/Podfile
 before_install:
  - gem install cocoapods
  - pod repo update
- - pod install
+ - pod install --project-directory=FitnessApp
 
 #- pod install --project-directory=FitnessApp
 
