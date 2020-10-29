@@ -10,7 +10,7 @@ xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro Max
 before_install:
 - gem install cocoapods
 - cd FitnessApp
-- pod install
+- pod install --no-repo-update
 
 # osx_image: xcode12.2
 # language: swift
