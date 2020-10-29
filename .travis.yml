@@ -7,8 +7,11 @@ language: swift
 cache: cocoapods
 podfile: FitnessApp/Podfile
 
-#before_install:
-#- gem install cocoapods # Since Travis is not always on latest version
+before_install:
+ - gem install cocoapods
+ - pod repo update
+ - pod install
+
 #- pod install --project-directory=FitnessApp
 
 script:
