@@ -76,7 +76,13 @@ extension AppCoordinator: CreatingAccount {
     }
     
     func showSignupVC() {
-        //TODO
+        let controller = SignupViewController()
+        controller.bgImageName = "SignupBackground"
+        controller.titleText = "HELLO!"
+        controller.descriptionText = "Start transforming the way you enjoy your life"
+        
+        controller.signupCoordinator = self
+        navigationController.pushViewController(controller, animated: true)//TODO
     }
     func showCreateAccountVC() {
         //TODO

@@ -19,6 +19,7 @@
 		244E9431254B289F008AE146 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9430254B289F008AE146 /* Alert.swift */; };
 		244E943A254B2912008AE146 /* CoreModuleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9439254B2912008AE146 /* CoreModuleExtension.swift */; };
 		244E949A254B52C7008AE146 /* CoreModuleLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 244E9498254B52C7008AE146 /* CoreModuleLocalizable.strings */; };
+		245343C8254B6CE200726E8F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343C7254B6CE200726E8F /* SignupViewController.swift */; };
 		246C81EA25499D5D009AD69F /* AppSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C81E925499D5D009AD69F /* AppSettingsManager.swift */; };
 		246C81F52549ADDB009AD69F /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C81F42549ADDB009AD69F /* AppDataManager.swift */; };
 		246C82042549AF46009AD69F /* OnBoardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C82032549AF46009AD69F /* OnBoardingData.swift */; };
@@ -96,6 +97,7 @@
 		244E9430254B289F008AE146 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		244E9439254B2912008AE146 /* CoreModuleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModuleExtension.swift; sourceTree = "<group>"; };
 		244E9499254B52C7008AE146 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CoreModuleLocalizable.strings; sourceTree = "<group>"; };
+		245343C7254B6CE200726E8F /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		246C81E925499D5D009AD69F /* AppSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
 		246C81F42549ADDB009AD69F /* AppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataManager.swift; sourceTree = "<group>"; };
 		246C82032549AF46009AD69F /* OnBoardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingData.swift; sourceTree = "<group>"; };
@@ -239,6 +241,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		245343C6254B6CC300726E8F /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				245343C7254B6CE200726E8F /* SignupViewController.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
 		246C81E725499D34009AD69F /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +367,7 @@
 				24A0771E2548D9A100EE111F /* Loading */,
 				246C82022549AEA0009AD69F /* OnBoarding */,
 				244E9426254B2799008AE146 /* Login */,
+				245343C6254B6CC300726E8F /* Signup */,
 			);
 			path = Setup;
 			sourceTree = "<group>";
@@ -657,6 +668,7 @@
 				246C81EA25499D5D009AD69F /* AppSettingsManager.swift in Sources */,
 				246C81F52549ADDB009AD69F /* AppDataManager.swift in Sources */,
 				246C82112549B014009AD69F /* OnBoardingPage.swift in Sources */,
+				245343C8254B6CE200726E8F /* SignupViewController.swift in Sources */,
 				24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */,
 				24A0773C2548DC7400EE111F /* MovingToNextVC.swift in Sources */,
 				24379A8E25458A7C008B1E26 /* SceneDelegate.swift in Sources */,
