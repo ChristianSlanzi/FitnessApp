@@ -4,7 +4,7 @@
     "ios": "13.0"
   },
   "swift_versions": "5.0",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "A generic Login/Signup Framework",
   "requires_arc": true,
   "description": "CS_LoginModule is a generic framework for app login/signup.",
@@ -18,7 +18,7 @@
   },
   "source": {
     "git": "https://github.com/ChristianSlanzi/CS_LoginModule.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "frameworks": "UIKit",
   "source_files": "CS_LoginModule/Classes/**/*.{swift}",

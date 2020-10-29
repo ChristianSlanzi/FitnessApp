@@ -14,6 +14,6 @@ extension String {
     //TODO: Refactor in a localizedIn(_ tableName: String)->String
     // ACCESS LOCALIZED STRING INSIDE MODULE
     var localizedInLoginModule: String {
-        return NSLocalizedString(self, tableName: "LoginModuleLocalizable", bundle: Bundle(identifier: "de.test.LoginModule")!, value: "", comment: "")
+        return NSLocalizedString(self, tableName: "LoginModuleLocalizable", bundle: Bundle(identifier: "org.cocoapods.CS-LoginModule")!, value: "", comment: "")
     }
 }

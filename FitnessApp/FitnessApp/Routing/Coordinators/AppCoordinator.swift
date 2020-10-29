@@ -70,7 +70,9 @@ extension AppCoordinator: MovingToNextVC {
 
 extension AppCoordinator: CreatingAccount {
     func showLoginVC() {
-        //TODO
+        let controller = getLoginViewController()
+        controller.signupCoordinator = self
+        navigationController.pushViewController(controller, animated: true)
     }
     
     func showSignupVC() {
@@ -88,6 +90,30 @@ extension AppCoordinator: CreatingAccount {
         startMainTabBarController()
     }
     
+}
+
+// MARK: Private
+private extension AppCoordinator {
+    private func getLoginViewController() -> LoginViewController {
+        let loginViewController = LoginViewController()
+        loginViewController.bgImageName = "SignupBackground"
+        loginViewController.loginCoordinator = self
+        return loginViewController
+    }
+    
+}
+
+// MARK: - LoginViewControllerCoordinator Delegate
+extension AppCoordinator: LoginViewControllerCoordinatorDelegate {
+    func userLoggedIn() {
+        navigationController.popViewController(animated: true)
+        
+        startMainTabBarController()
+    }
+    
+    //func didPressLoginButton() {
+    //    navigation.popViewController(animated: true)
+    //}
 }
 
 // MARK: - UIWindow Extension

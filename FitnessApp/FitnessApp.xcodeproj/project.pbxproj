@@ -15,6 +15,10 @@
 		24379A9825458A7F008B1E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24379A9625458A7F008B1E26 /* LaunchScreen.storyboard */; };
 		24379AA325458A7F008B1E26 /* FitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379AA225458A7F008B1E26 /* FitnessAppTests.swift */; };
 		24379AAE25458A7F008B1E26 /* FitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379AAD25458A7F008B1E26 /* FitnessAppUITests.swift */; };
+		244E9428254B27BB008AE146 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9427254B27BB008AE146 /* LoginViewController.swift */; };
+		244E9431254B289F008AE146 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9430254B289F008AE146 /* Alert.swift */; };
+		244E943A254B2912008AE146 /* CoreModuleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9439254B2912008AE146 /* CoreModuleExtension.swift */; };
+		244E949A254B52C7008AE146 /* CoreModuleLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 244E9498254B52C7008AE146 /* CoreModuleLocalizable.strings */; };
 		246C81EA25499D5D009AD69F /* AppSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C81E925499D5D009AD69F /* AppSettingsManager.swift */; };
 		246C81F52549ADDB009AD69F /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C81F42549ADDB009AD69F /* AppDataManager.swift */; };
 		246C82042549AF46009AD69F /* OnBoardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C82032549AF46009AD69F /* OnBoardingData.swift */; };
@@ -88,6 +92,10 @@
 		24379AA925458A7F008B1E26 /* FitnessAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24379AAD25458A7F008B1E26 /* FitnessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAppUITests.swift; sourceTree = "<group>"; };
 		24379AAF25458A7F008B1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		244E9427254B27BB008AE146 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		244E9430254B289F008AE146 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		244E9439254B2912008AE146 /* CoreModuleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModuleExtension.swift; sourceTree = "<group>"; };
+		244E9499254B52C7008AE146 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CoreModuleLocalizable.strings; sourceTree = "<group>"; };
 		246C81E925499D5D009AD69F /* AppSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
 		246C81F42549ADDB009AD69F /* AppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataManager.swift; sourceTree = "<group>"; };
 		246C82032549AF46009AD69F /* OnBoardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingData.swift; sourceTree = "<group>"; };
@@ -207,6 +215,30 @@
 			path = FitnessAppUITests;
 			sourceTree = "<group>";
 		};
+		244E9426254B2799008AE146 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				244E9427254B27BB008AE146 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		244E942F254B2881008AE146 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				244E9430254B289F008AE146 /* Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		244E9438254B28ED008AE146 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				244E9439254B2912008AE146 /* CoreModuleExtension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		246C81E725499D34009AD69F /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +300,9 @@
 		24A076F92548D34600EE111F /* CS_CoreModule */ = {
 			isa = PBXGroup;
 			children = (
+				244E9498254B52C7008AE146 /* CoreModuleLocalizable.strings */,
+				244E9438254B28ED008AE146 /* Utilities */,
+				244E942F254B2881008AE146 /* Alert */,
 				24A077082548D37B00EE111F /* Routing */,
 				24A076FA2548D34600EE111F /* CS_CoreModule.h */,
 				24A076FB2548D34600EE111F /* Info.plist */,
@@ -321,6 +356,7 @@
 			children = (
 				24A0771E2548D9A100EE111F /* Loading */,
 				246C82022549AEA0009AD69F /* OnBoarding */,
+				244E9426254B2799008AE146 /* Login */,
 			);
 			path = Setup;
 			sourceTree = "<group>";
@@ -538,6 +574,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244E949A254B52C7008AE146 /* CoreModuleLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +660,7 @@
 				24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */,
 				24A0773C2548DC7400EE111F /* MovingToNextVC.swift in Sources */,
 				24379A8E25458A7C008B1E26 /* SceneDelegate.swift in Sources */,
+				244E9428254B27BB008AE146 /* LoginViewController.swift in Sources */,
 				246C820C2549AF5D009AD69F /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,6 +685,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244E9431254B289F008AE146 /* Alert.swift in Sources */,
+				244E943A254B2912008AE146 /* CoreModuleExtension.swift in Sources */,
 				24A0770B2548D3AF00EE111F /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +726,14 @@
 				24379A9725458A7F008B1E26 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		244E9498254B52C7008AE146 /* CoreModuleLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				244E9499254B52C7008AE146 /* en */,
+			);
+			name = CoreModuleLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
