@@ -7,6 +7,7 @@
 
 import UIKit
 import CS_CoreModule
+import CS_LoginModule
 
 final class AppCoordinator: Coordinator {
 
@@ -50,7 +51,7 @@ extension AppCoordinator: MovingToNextVC {
             // show login or main screen
             
             //TODO: import CS_LoginManager
-            let isLoggedIn = false //LoginManager.getUserID() != nil
+            let isLoggedIn = LoginManager.getUserID() != nil
                 
             if isLoggedIn {
                 startMainTabBarController()

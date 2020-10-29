@@ -2,6 +2,7 @@ PODS:
   - CS_Common_UI (0.1.2):
     - CS_Common_Utils (~> 0.1.3)
   - CS_Common_Utils (0.1.5)
+  - CS_LoginModule (0.1.1)
   - Overture (0.5.0)
   - Realm (3.20.0):
     - Realm/Headers (= 3.20.0)
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - CS_Common_UI (from `https://github.com/christianslanzi/CS_Common_UI.git`)
   - CS_Common_Utils (from `https://github.com/christianslanzi/CS_Common_Utils.git`)
+  - CS_LoginModule (from `https://github.com/christianslanzi/CS_LoginModule.git`)
   - Overture
   - RealmSwift (~> 3.20.0)
 
@@ -26,6 +28,8 @@ EXTERNAL SOURCES:
     :git: https://github.com/christianslanzi/CS_Common_UI.git
   CS_Common_Utils:
     :git: https://github.com/christianslanzi/CS_Common_Utils.git
+  CS_LoginModule:
+    :git: https://github.com/christianslanzi/CS_LoginModule.git
 
 CHECKOUT OPTIONS:
   CS_Common_UI:
@@ -34,14 +38,18 @@ CHECKOUT OPTIONS:
   CS_Common_Utils:
     :commit: 36fb13d76ebba3213b25c78d42de905541b36fde
     :git: https://github.com/christianslanzi/CS_Common_Utils.git
+  CS_LoginModule:
+    :commit: 204302bb6a7888efd1ea6285775825d09f531a15
+    :git: https://github.com/christianslanzi/CS_LoginModule.git
 
 SPEC CHECKSUMS:
   CS_Common_UI: 37cfa4fbfd945e769a2e0f6e3ffb3ac038af8483
   CS_Common_Utils: 69d9ec666302fcf7334977df3b8e3a6ee2d7c3e4
+  CS_LoginModule: 44bb8df1de43f946afae4121fcd7ac16c197a872
   Overture: 2e6252ead5da6d3347f758047f27a31cb469d59d
   Realm: 8b2ca5bc6479a91f379b6b42b5922e396cd5ba5a
   RealmSwift: 1949ef26a279e1845bd51d591b9103adfcd121df
 
-PODFILE CHECKSUM: 9df9c8244102087e8ca4d6d732577db69ca3bd00
+PODFILE CHECKSUM: 903b72b660ab671bac6b8c73ef858d669dd26063
 
 COCOAPODS: 1.8.4

@@ -1,0 +1,27 @@
+{
+  "name": "CS_LoginModule",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": "5.0",
+  "version": "0.1.1",
+  "summary": "A generic Login/Signup Framework",
+  "requires_arc": true,
+  "description": "CS_LoginModule is a generic framework for app login/signup.",
+  "homepage": "https://github.com/ChristianSlanzi/CS_LoginModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ChristianSlanzi": "christian.slanzi@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ChristianSlanzi/CS_LoginModule.git",
+    "tag": "0.1.1"
+  },
+  "frameworks": "UIKit",
+  "source_files": "CS_LoginModule/Classes/**/*.{swift}",
+  "resources": "CS_LoginModule/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}",
+  "swift_version": "5.0"
+}
