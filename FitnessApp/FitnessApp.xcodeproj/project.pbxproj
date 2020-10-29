@@ -20,6 +20,23 @@
 		244E943A254B2912008AE146 /* CoreModuleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9439254B2912008AE146 /* CoreModuleExtension.swift */; };
 		244E949A254B52C7008AE146 /* CoreModuleLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 244E9498254B52C7008AE146 /* CoreModuleLocalizable.strings */; };
 		245343C8254B6CE200726E8F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343C7254B6CE200726E8F /* SignupViewController.swift */; };
+		245343CD254B6F4300726E8F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343CC254B6F4300726E8F /* CreateAccountViewController.swift */; };
+		245343ED254B723E00726E8F /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343D4254B723E00726E8F /* BaseRepository.swift */; };
+		245343EE254B723E00726E8F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343D6254B723E00726E8F /* DataManager.swift */; };
+		245343EF254B723E00726E8F /* MappableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343D8254B723E00726E8F /* MappableProtocol.swift */; };
+		245343F0254B723E00726E8F /* Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343DA254B723E00726E8F /* Storable.swift */; };
+		245343F1254B723E00726E8F /* URL+Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343DC254B723E00726E8F /* URL+Document.swift */; };
+		245343F2254B723E00726E8F /* RealmObject+Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343DD254B723E00726E8F /* RealmObject+Storable.swift */; };
+		245343F3254B723E00726E8F /* Sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343DF254B723E00726E8F /* Sorted.swift */; };
+		245343F4254B723E00726E8F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343E3254B723E00726E8F /* CoreDataManager.swift */; };
+		245343F5254B723E00726E8F /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343E6254B723E00726E8F /* UserRepository.swift */; };
+		245343F6254B723E00726E8F /* RealmDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343E8254B723E00726E8F /* RealmDataManager.swift */; };
+		245343F7254B723E00726E8F /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343EA254B723E00726E8F /* RealmProvider.swift */; };
+		245343F8254B723E00726E8F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343EC254B723E00726E8F /* User.swift */; };
+		245343FD254B776200726E8F /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343FC254B776200726E8F /* Gender.swift */; };
+		24534402254B785900726E8F /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24534401254B785900726E8F /* UserDTO.swift */; };
+		24534407254B789900726E8F /* UserAccountDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24534406254B789900726E8F /* UserAccountDTO.swift */; };
+		2453440C254B78C500726E8F /* UserProfileDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2453440B254B78C500726E8F /* UserProfileDTO.swift */; };
 		246C81EA25499D5D009AD69F /* AppSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C81E925499D5D009AD69F /* AppSettingsManager.swift */; };
 		246C81F52549ADDB009AD69F /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C81F42549ADDB009AD69F /* AppDataManager.swift */; };
 		246C82042549AF46009AD69F /* OnBoardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C82032549AF46009AD69F /* OnBoardingData.swift */; };
@@ -98,6 +115,23 @@
 		244E9439254B2912008AE146 /* CoreModuleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModuleExtension.swift; sourceTree = "<group>"; };
 		244E9499254B52C7008AE146 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CoreModuleLocalizable.strings; sourceTree = "<group>"; };
 		245343C7254B6CE200726E8F /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		245343CC254B6F4300726E8F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		245343D4254B723E00726E8F /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		245343D6254B723E00726E8F /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		245343D8254B723E00726E8F /* MappableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappableProtocol.swift; sourceTree = "<group>"; };
+		245343DA254B723E00726E8F /* Storable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storable.swift; sourceTree = "<group>"; };
+		245343DC254B723E00726E8F /* URL+Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Document.swift"; sourceTree = "<group>"; };
+		245343DD254B723E00726E8F /* RealmObject+Storable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RealmObject+Storable.swift"; sourceTree = "<group>"; };
+		245343DF254B723E00726E8F /* Sorted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sorted.swift; sourceTree = "<group>"; };
+		245343E3254B723E00726E8F /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		245343E6254B723E00726E8F /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		245343E8254B723E00726E8F /* RealmDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDataManager.swift; sourceTree = "<group>"; };
+		245343EA254B723E00726E8F /* RealmProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
+		245343EC254B723E00726E8F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		245343FC254B776200726E8F /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		24534401254B785900726E8F /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		24534406254B789900726E8F /* UserAccountDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountDTO.swift; sourceTree = "<group>"; };
+		2453440B254B78C500726E8F /* UserProfileDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileDTO.swift; sourceTree = "<group>"; };
 		246C81E925499D5D009AD69F /* AppSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
 		246C81F42549ADDB009AD69F /* AppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataManager.swift; sourceTree = "<group>"; };
 		246C82032549AF46009AD69F /* OnBoardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingData.swift; sourceTree = "<group>"; };
@@ -183,6 +217,7 @@
 		24379A8A25458A7C008B1E26 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				245343D1254B71DB00726E8F /* Data Model Layer */,
 				246C81F12549AD58009AD69F /* Data */,
 				246C81E725499D34009AD69F /* Services */,
 				24A077182548D60A00EE111F /* Routing */,
@@ -245,8 +280,149 @@
 			isa = PBXGroup;
 			children = (
 				245343C7254B6CE200726E8F /* SignupViewController.swift */,
+				245343CC254B6F4300726E8F /* CreateAccountViewController.swift */,
 			);
 			path = Signup;
+			sourceTree = "<group>";
+		};
+		245343D1254B71DB00726E8F /* Data Model Layer */ = {
+			isa = PBXGroup;
+			children = (
+				245343D2254B723E00726E8F /* Common Core */,
+				245343E0254B723E00726E8F /* Specific */,
+			);
+			path = "Data Model Layer";
+			sourceTree = "<group>";
+		};
+		245343D2254B723E00726E8F /* Common Core */ = {
+			isa = PBXGroup;
+			children = (
+				245343D3254B723E00726E8F /* Repository */,
+				245343D5254B723E00726E8F /* Managers */,
+				245343D7254B723E00726E8F /* Mapper */,
+				245343D9254B723E00726E8F /* Protocol */,
+				245343DB254B723E00726E8F /* Extensions */,
+				245343DE254B723E00726E8F /* Sorting */,
+			);
+			path = "Common Core";
+			sourceTree = "<group>";
+		};
+		245343D3254B723E00726E8F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				245343D4254B723E00726E8F /* BaseRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		245343D5254B723E00726E8F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				245343D6254B723E00726E8F /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		245343D7254B723E00726E8F /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				245343D8254B723E00726E8F /* MappableProtocol.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		245343D9254B723E00726E8F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				245343DA254B723E00726E8F /* Storable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		245343DB254B723E00726E8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				245343DC254B723E00726E8F /* URL+Document.swift */,
+				245343DD254B723E00726E8F /* RealmObject+Storable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		245343DE254B723E00726E8F /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				245343DF254B723E00726E8F /* Sorted.swift */,
+			);
+			path = Sorting;
+			sourceTree = "<group>";
+		};
+		245343E0254B723E00726E8F /* Specific */ = {
+			isa = PBXGroup;
+			children = (
+				245343E1254B723E00726E8F /* CoreData */,
+				245343E4254B723E00726E8F /* Realm */,
+			);
+			path = Specific;
+			sourceTree = "<group>";
+		};
+		245343E1254B723E00726E8F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				245343E2254B723E00726E8F /* Managers */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		245343E2254B723E00726E8F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				245343E3254B723E00726E8F /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		245343E4254B723E00726E8F /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				245343E5254B723E00726E8F /* Repository */,
+				245343E7254B723E00726E8F /* Managers */,
+				245343E9254B723E00726E8F /* Provider */,
+				245343EB254B723E00726E8F /* Model */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		245343E5254B723E00726E8F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				245343E6254B723E00726E8F /* UserRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		245343E7254B723E00726E8F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				245343E8254B723E00726E8F /* RealmDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		245343E9254B723E00726E8F /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				245343EA254B723E00726E8F /* RealmProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		245343EB254B723E00726E8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				245343EC254B723E00726E8F /* User.swift */,
+				245343FC254B776200726E8F /* Gender.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		246C81E725499D34009AD69F /* Services */ = {
@@ -285,6 +461,9 @@
 		246C81F32549AD83009AD69F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				24534401254B785900726E8F /* UserDTO.swift */,
+				24534406254B789900726E8F /* UserAccountDTO.swift */,
+				2453440B254B78C500726E8F /* UserProfileDTO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -660,15 +839,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245343CD254B6F4300726E8F /* CreateAccountViewController.swift in Sources */,
+				245343F2254B723E00726E8F /* RealmObject+Storable.swift in Sources */,
+				24534402254B785900726E8F /* UserDTO.swift in Sources */,
 				24A077112548D44400EE111F /* AppCoordinator.swift in Sources */,
 				24379A9025458A7C008B1E26 /* ViewController.swift in Sources */,
+				245343F0254B723E00726E8F /* Storable.swift in Sources */,
+				245343F8254B723E00726E8F /* User.swift in Sources */,
 				246C82422549CADC009AD69F /* CreatingAccount.swift in Sources */,
+				24534407254B789900726E8F /* UserAccountDTO.swift in Sources */,
+				245343F3254B723E00726E8F /* Sorted.swift in Sources */,
+				2453440C254B78C500726E8F /* UserProfileDTO.swift in Sources */,
 				24A077202548D9BF00EE111F /* LoadingViewController.swift in Sources */,
+				245343F4254B723E00726E8F /* CoreDataManager.swift in Sources */,
+				245343F6254B723E00726E8F /* RealmDataManager.swift in Sources */,
 				246C82042549AF46009AD69F /* OnBoardingData.swift in Sources */,
 				246C81EA25499D5D009AD69F /* AppSettingsManager.swift in Sources */,
 				246C81F52549ADDB009AD69F /* AppDataManager.swift in Sources */,
 				246C82112549B014009AD69F /* OnBoardingPage.swift in Sources */,
+				245343F1254B723E00726E8F /* URL+Document.swift in Sources */,
+				245343F5254B723E00726E8F /* UserRepository.swift in Sources */,
+				245343EF254B723E00726E8F /* MappableProtocol.swift in Sources */,
+				245343EE254B723E00726E8F /* DataManager.swift in Sources */,
+				245343F7254B723E00726E8F /* RealmProvider.swift in Sources */,
+				245343FD254B776200726E8F /* Gender.swift in Sources */,
 				245343C8254B6CE200726E8F /* SignupViewController.swift in Sources */,
+				245343ED254B723E00726E8F /* BaseRepository.swift in Sources */,
 				24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */,
 				24A0773C2548DC7400EE111F /* MovingToNextVC.swift in Sources */,
 				24379A8E25458A7C008B1E26 /* SceneDelegate.swift in Sources */,
