@@ -40,17 +40,23 @@ final class AppCoordinator: Coordinator {
     }
     
     func startMainTabBarController() {
-        //TODO
+        let mainCoordinator = MainCoordinator(navigationController: UINavigationController(), isNavigationBarHidden: true)
+        let exploreCoordinator = ExploreCoordinator(navigationController: UINavigationController())
+        let myGoalCoordinator = MyGoalCoordinator(navigationController: UINavigationController())
+        let settingsCoordinator = SettingsCoordinator(navigationController: UINavigationController())
+        let coordinators: [Coordinator] = [mainCoordinator, exploreCoordinator, myGoalCoordinator, settingsCoordinator]
+        let tabBarController = MainTabBarCoordinatedController(coordinators: coordinators)
+        window.rootViewController = tabBarController
+        self.window.makeKeyAndVisible()
     }
 }
 
 extension AppCoordinator: MovingToNextVC {
     func next() {
         let isOnboardingCompleted = AppSettingsManager.isOnboardingCompleted()
+        
         if isOnboardingCompleted {
             // show login or main screen
-            
-            //TODO: import CS_LoginManager
             let isLoggedIn = LoginManager.getUserID() != nil
                 
             if isLoggedIn {

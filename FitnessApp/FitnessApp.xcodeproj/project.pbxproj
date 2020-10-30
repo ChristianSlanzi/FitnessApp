@@ -59,6 +59,12 @@
 		24A0773C2548DC7400EE111F /* MovingToNextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0773B2548DC7400EE111F /* MovingToNextVC.swift */; };
 		24A077452548DDF100EE111F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A077442548DDF100EE111F /* Media.xcassets */; };
 		24AD864325475D1F00C57EDC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 24AD864225475D1F00C57EDC /* README.md */; };
+		24FFEF3B254C26F400257893 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF3A254C26F400257893 /* MainCoordinator.swift */; };
+		24FFEF40254C27D800257893 /* ExploreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF3F254C27D800257893 /* ExploreCoordinator.swift */; };
+		24FFEF45254C280D00257893 /* MyGoalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF44254C280D00257893 /* MyGoalCoordinator.swift */; };
+		24FFEF4A254C283C00257893 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF49254C283C00257893 /* SettingsCoordinator.swift */; };
+		24FFEF4F254C297B00257893 /* MainTabBarCoordinatedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF4E254C297B00257893 /* MainTabBarCoordinatedController.swift */; };
+		24FFEF54254C2A3300257893 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF53254C2A3300257893 /* SettingsService.swift */; };
 		6D9A2964157F530C1EB5054F /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9B6528413D883439C55EB /* Pods_FitnessApp.framework */; };
 		F2F076B9B123EB2C2BBB8D68 /* Pods_FitnessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905147CFC728A1853084E00D /* Pods_FitnessAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -161,6 +167,12 @@
 		24A0773B2548DC7400EE111F /* MovingToNextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingToNextVC.swift; sourceTree = "<group>"; };
 		24A077442548DDF100EE111F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		24AD864225475D1F00C57EDC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		24FFEF3A254C26F400257893 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		24FFEF3F254C27D800257893 /* ExploreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCoordinator.swift; sourceTree = "<group>"; };
+		24FFEF44254C280D00257893 /* MyGoalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalCoordinator.swift; sourceTree = "<group>"; };
+		24FFEF49254C283C00257893 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		24FFEF4E254C297B00257893 /* MainTabBarCoordinatedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinatedController.swift; sourceTree = "<group>"; };
+		24FFEF53254C2A3300257893 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
 		318967FF723418B00BD506CB /* Pods-FitnessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.release.xcconfig"; path = "Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		50DE087F87EB8A3E822FBBCF /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 		905147CFC728A1853084E00D /* Pods_FitnessAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -473,6 +485,7 @@
 			isa = PBXGroup;
 			children = (
 				246C81E925499D5D009AD69F /* AppSettingsManager.swift */,
+				24FFEF53254C2A3300257893 /* SettingsService.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -556,6 +569,10 @@
 			children = (
 				24A0773A2548DC5700EE111F /* Actions */,
 				24A077102548D44400EE111F /* AppCoordinator.swift */,
+				24FFEF3A254C26F400257893 /* MainCoordinator.swift */,
+				24FFEF3F254C27D800257893 /* ExploreCoordinator.swift */,
+				24FFEF44254C280D00257893 /* MyGoalCoordinator.swift */,
+				24FFEF49254C283C00257893 /* SettingsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -572,6 +589,7 @@
 			isa = PBXGroup;
 			children = (
 				24A0771D2548D99000EE111F /* Setup */,
+				24FFEF4E254C297B00257893 /* MainTabBarCoordinatedController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -879,6 +897,7 @@
 				245343CD254B6F4300726E8F /* CreateAccountViewController.swift in Sources */,
 				245343F2254B723E00726E8F /* RealmObject+Storable.swift in Sources */,
 				24534402254B785900726E8F /* UserDTO.swift in Sources */,
+				24FFEF45254C280D00257893 /* MyGoalCoordinator.swift in Sources */,
 				24A077112548D44400EE111F /* AppCoordinator.swift in Sources */,
 				24379A9025458A7C008B1E26 /* ViewController.swift in Sources */,
 				2453441C254B7CB700726E8F /* ProfileCreationWizard.swift in Sources */,
@@ -886,11 +905,14 @@
 				245343F8254B723E00726E8F /* User.swift in Sources */,
 				246C82422549CADC009AD69F /* CreatingAccount.swift in Sources */,
 				2453441D254B7CB700726E8F /* InputContentView.swift in Sources */,
+				24FFEF3B254C26F400257893 /* MainCoordinator.swift in Sources */,
 				24534407254B789900726E8F /* UserAccountDTO.swift in Sources */,
 				245343F3254B723E00726E8F /* Sorted.swift in Sources */,
 				2453440C254B78C500726E8F /* UserProfileDTO.swift in Sources */,
+				24FFEF40254C27D800257893 /* ExploreCoordinator.swift in Sources */,
 				24A077202548D9BF00EE111F /* LoadingViewController.swift in Sources */,
 				245343F4254B723E00726E8F /* CoreDataManager.swift in Sources */,
+				24FFEF54254C2A3300257893 /* SettingsService.swift in Sources */,
 				245343F6254B723E00726E8F /* RealmDataManager.swift in Sources */,
 				2453441E254B7CB700726E8F /* ContentView.swift in Sources */,
 				24534421254B7CB700726E8F /* ProfileQuestion.swift in Sources */,
@@ -898,7 +920,9 @@
 				246C81EA25499D5D009AD69F /* AppSettingsManager.swift in Sources */,
 				2453441F254B7CB700726E8F /* HeaderView.swift in Sources */,
 				246C81F52549ADDB009AD69F /* AppDataManager.swift in Sources */,
+				24FFEF4A254C283C00257893 /* SettingsCoordinator.swift in Sources */,
 				246C82112549B014009AD69F /* OnBoardingPage.swift in Sources */,
+				24FFEF4F254C297B00257893 /* MainTabBarCoordinatedController.swift in Sources */,
 				245343F1254B723E00726E8F /* URL+Document.swift in Sources */,
 				245343F5254B723E00726E8F /* UserRepository.swift in Sources */,
 				245343EF254B723E00726E8F /* MappableProtocol.swift in Sources */,
