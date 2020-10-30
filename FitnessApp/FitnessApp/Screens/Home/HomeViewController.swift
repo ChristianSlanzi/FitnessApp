@@ -31,10 +31,12 @@ class HomeViewController: BaseViewController {
         return view
     }()
     */
-    private let barChart: UIView = {
-        let view = UIView()
+    private let barChart: BasicBarChart = {
+        let view = BasicBarChart()
         view.backgroundColor = .white
         view.layer.cornerRadius = 5
+        let dataEntries = DataEntryGenerator().generateEmptyDataEntries()
+        view.updateDataEntries(dataEntries: dataEntries, animated: false)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -60,6 +62,7 @@ class HomeViewController: BaseViewController {
         
         view.addSubview(navigationBar)
         view.addSubview(barChart)
+        barChart.updateDataEntries(dataEntries: DataEntryGenerator().generateRandomDataEntries(), animated: false)
 
         add(childController: contentVC)
         

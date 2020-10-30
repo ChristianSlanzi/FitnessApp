@@ -59,6 +59,14 @@
 		23F32CE373A6A626F4CF12853BFF085A /* RLMRealmConfiguration+Sync.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D3305C388027F348BEAB03475D1261D /* RLMRealmConfiguration+Sync.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.20.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		2415B9FA3AE0E37230335EC9FB6CDB26 /* RLMMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CC4162E55EA801BBB0403A6099DC04B /* RLMMigration.h */; };
 		24FFEF67254C515D00257893 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF66254C515D00257893 /* NavigationBar.swift */; };
+		24FFEF7B254C5C4B00257893 /* BasicBarChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF72254C5C4B00257893 /* BasicBarChartPresenter.swift */; };
+		24FFEF7C254C5C4B00257893 /* BasicBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF73254C5C4B00257893 /* BasicBarChart.swift */; };
+		24FFEF7D254C5C4B00257893 /* BasicBarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF74254C5C4B00257893 /* BasicBarEntry.swift */; };
+		24FFEF7E254C5C4B00257893 /* CustomSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF76254C5C4B00257893 /* CustomSegments.swift */; };
+		24FFEF7F254C5C4B00257893 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF77254C5C4B00257893 /* CALayerExtension.swift */; };
+		24FFEF80254C5C4B00257893 /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF78254C5C4B00257893 /* UIBezierPathExtension.swift */; };
+		24FFEF81254C5C4B00257893 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF79254C5C4B00257893 /* ArrayExtension.swift */; };
+		24FFEF82254C5C4B00257893 /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF7A254C5C4B00257893 /* DataEntry.swift */; };
 		254CD71F5A5B97977A40FA03D0AAD00C /* RLMRealmConfiguration_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 78375BACCCB9C4846FA7483709658C36 /* RLMRealmConfiguration_Private.h */; };
 		256600DB6D5B33AF0D7EF99A8C5A6032 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58F7D676E11731AFB78D06713197F2E /* NSObject+Ext.swift */; };
 		263FB942417B87517AFADF74417521E8 /* RLMObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BAFBCC9DE1FD5431A9B0630282DF94A /* RLMObject.h */; };
@@ -512,6 +520,14 @@
 		24286D9483405F17AD28A3BFD3634E7A /* Debouncer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debouncer.swift; path = CS_Common_Utils/Classes/Helpers/Debounce/Debouncer.swift; sourceTree = "<group>"; };
 		2479EFC8C9490C735601D47BFBB2C4A4 /* Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sequence.swift; path = Sources/Overture/Sequence.swift; sourceTree = "<group>"; };
 		24FFEF66254C515D00257893 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		24FFEF72254C5C4B00257893 /* BasicBarChartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicBarChartPresenter.swift; sourceTree = "<group>"; };
+		24FFEF73254C5C4B00257893 /* BasicBarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicBarChart.swift; sourceTree = "<group>"; };
+		24FFEF74254C5C4B00257893 /* BasicBarEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicBarEntry.swift; sourceTree = "<group>"; };
+		24FFEF76254C5C4B00257893 /* CustomSegments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegments.swift; sourceTree = "<group>"; };
+		24FFEF77254C5C4B00257893 /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		24FFEF78254C5C4B00257893 /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtension.swift; sourceTree = "<group>"; };
+		24FFEF79254C5C4B00257893 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		24FFEF7A254C5C4B00257893 /* DataEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEntry.swift; sourceTree = "<group>"; };
 		262622F926043D85BA24D3A55B50D991 /* RLMObjectSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectSchema.h; path = include/RLMObjectSchema.h; sourceTree = "<group>"; };
 		26639B64B36AC10C1ACB6048AEEB13AC /* work_queue.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = work_queue.cpp; path = Realm/ObjectStore/src/sync/impl/work_queue.cpp; sourceTree = "<group>"; };
 		293E7C3172277618F63F33C67C241C74 /* list_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = list_notifier.cpp; path = Realm/ObjectStore/src/impl/list_notifier.cpp; sourceTree = "<group>"; };
@@ -900,6 +916,38 @@
 			path = "../Target Support Files/Overture";
 			sourceTree = "<group>";
 		};
+		24FFEF70254C5C4B00257893 /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				24FFEF71254C5C4B00257893 /* BasicBarChart */,
+				24FFEF75254C5C4B00257893 /* Shared */,
+			);
+			name = BarChart;
+			path = CS_Common_UI/Classes/Components/BarChart;
+			sourceTree = "<group>";
+		};
+		24FFEF71254C5C4B00257893 /* BasicBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				24FFEF72254C5C4B00257893 /* BasicBarChartPresenter.swift */,
+				24FFEF73254C5C4B00257893 /* BasicBarChart.swift */,
+				24FFEF74254C5C4B00257893 /* BasicBarEntry.swift */,
+			);
+			path = BasicBarChart;
+			sourceTree = "<group>";
+		};
+		24FFEF75254C5C4B00257893 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				24FFEF76254C5C4B00257893 /* CustomSegments.swift */,
+				24FFEF77254C5C4B00257893 /* CALayerExtension.swift */,
+				24FFEF78254C5C4B00257893 /* UIBezierPathExtension.swift */,
+				24FFEF79254C5C4B00257893 /* ArrayExtension.swift */,
+				24FFEF7A254C5C4B00257893 /* DataEntry.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		374661DB89C609CF61C4717329C9E135 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1159,6 +1207,7 @@
 		D5782E89C859874E231EF005101B38B3 /* CS_Common_UI */ = {
 			isa = PBXGroup;
 			children = (
+				24FFEF70254C5C4B00257893 /* BarChart */,
 				69AF6CC0EDC1E7B9A64D57CCC9FDEE35 /* Adapter.swift */,
 				0AC5067BEF0038B7E7E3BE70BF691CC4 /* BaseViewController.swift */,
 				F7D7644118539CB7F7974A5E7467ABFC /* CaptionView.swift */,
@@ -1170,6 +1219,7 @@
 				FD8C72C40CB6E670B583E7D07B5510FF /* CustomStackView.swift */,
 				DD1C87F9B39AB44CEF1B246563A1334A /* CustomTextField.swift */,
 				6D08A4810B7D80F007B78D5C4B50B5E7 /* CustomView.swift */,
+				24FFEF66254C515D00257893 /* NavigationBar.swift */,
 				B68A0D00C56E1771734DDDF9918BB354 /* InfoNotification.swift */,
 				36DC2A58891F763EF5071ED9775CC8A1 /* Modal.swift */,
 				406E6CBF9704AAFAC59FFA47FF804EA9 /* PopupNotification.swift */,
@@ -1182,7 +1232,6 @@
 				47FFB882454EE64E25BC96BA557821B3 /* UITabBar+ColorUpdatable.swift */,
 				2F9CBCBDD6065668A73007E79871E35C /* ValidableTextControl.swift */,
 				66B164DA036C6B1999F6CDF21B974A30 /* Support Files */,
-				24FFEF66254C515D00257893 /* NavigationBar.swift */,
 			);
 			path = CS_Common_UI;
 			sourceTree = "<group>";
@@ -1974,6 +2023,8 @@
 				8F5881905C0988080226D05B7E00DB90 /* Adapter.swift in Sources */,
 				FF70DE6046825CDDF288D65FCAC918E2 /* BaseViewController.swift in Sources */,
 				7D582EBF298556000D873B649F5D002B /* CaptionView.swift in Sources */,
+				24FFEF7B254C5C4B00257893 /* BasicBarChartPresenter.swift in Sources */,
+				24FFEF7F254C5C4B00257893 /* CALayerExtension.swift in Sources */,
 				4193556B4577F616EE9D680C497B7D7C /* ColorThemeObserving.swift in Sources */,
 				8083027ADC9E24B1D4093A4CC924DBBD /* ColorUpdatable.swift in Sources */,
 				045B4342B0D616BB1D216DF5F6C96388 /* CS_Common_UI-dummy.m in Sources */,
@@ -1986,14 +2037,20 @@
 				2E967B15085D2B9449C858F0A41BA78F /* CustomView.swift in Sources */,
 				3837A948B2808C8779E726535205CF08 /* InfoNotification.swift in Sources */,
 				A40B3F2C852F5676469AE68B6C2A3A88 /* Modal.swift in Sources */,
+				24FFEF7E254C5C4B00257893 /* CustomSegments.swift in Sources */,
 				087348A9B0297F2CC599779C7D1EB5B7 /* PopupNotification.swift in Sources */,
 				4D06285D99250F09B8CEE750D6C21746 /* TappableLabel.swift in Sources */,
 				DF324BD2C951111821BBB60E4058EDAA /* Theme.swift in Sources */,
+				24FFEF7C254C5C4B00257893 /* BasicBarChart.swift in Sources */,
+				24FFEF82254C5C4B00257893 /* DataEntry.swift in Sources */,
 				CAE978A599E16D3598390D9C923E8D63 /* ThemeUsageExample.swift in Sources */,
 				FCC0441449E7DA2163DB99CC4D950793 /* UIColor+Palette.swift in Sources */,
 				21327DA5F2D81FF5C20AA527B2756D03 /* UILabel+ColorUpdatable.swift in Sources */,
 				46747EA0AEC6996AF91F1957370617B9 /* UINavigationBar+ColorUpdatable.swift in Sources */,
 				D0869408940F317C03614AD4AEB3CD39 /* UITabBar+ColorUpdatable.swift in Sources */,
+				24FFEF81254C5C4B00257893 /* ArrayExtension.swift in Sources */,
+				24FFEF80254C5C4B00257893 /* UIBezierPathExtension.swift in Sources */,
+				24FFEF7D254C5C4B00257893 /* BasicBarEntry.swift in Sources */,
 				33B179E8CA9D7C22839A19E2020BEF13 /* ValidableTextControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
