@@ -8,7 +8,7 @@
 import UIKit
 import CS_CoreModule
 
-class MainCoordinator: NSObject, Coordinator {
+class MainCoordinator: NSObject, Coordinator, ShowingRoutineDetail {
     var childCoordinators: [Coordinator] = []
     
     var navigationController: UINavigationController
@@ -19,8 +19,12 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     func start() {
+        let controller = HomeViewController(dataManager: AppDataManager.shared) //TODO: inject the datamanager?
+        controller.bgImageName = "ScreenBackground"
+        controller.coordinator = self
         
+        controller.tabBarItem = UITabBarItem(title: "screen_title_Home".localized, image: UIImage(named: "Home"), tag: 0)
+        navigationController.pushViewController(controller, animated: false)
     }
-    
     
 }

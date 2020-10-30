@@ -65,6 +65,8 @@
 		24FFEF4A254C283C00257893 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF49254C283C00257893 /* SettingsCoordinator.swift */; };
 		24FFEF4F254C297B00257893 /* MainTabBarCoordinatedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF4E254C297B00257893 /* MainTabBarCoordinatedController.swift */; };
 		24FFEF54254C2A3300257893 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF53254C2A3300257893 /* SettingsService.swift */; };
+		24FFEF5A254C4E6900257893 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF59254C4E6900257893 /* HomeViewController.swift */; };
+		24FFEF62254C4EFF00257893 /* ShowingRoutineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF61254C4EFF00257893 /* ShowingRoutineDetail.swift */; };
 		6D9A2964157F530C1EB5054F /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9B6528413D883439C55EB /* Pods_FitnessApp.framework */; };
 		F2F076B9B123EB2C2BBB8D68 /* Pods_FitnessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905147CFC728A1853084E00D /* Pods_FitnessAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -173,6 +175,8 @@
 		24FFEF49254C283C00257893 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		24FFEF4E254C297B00257893 /* MainTabBarCoordinatedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinatedController.swift; sourceTree = "<group>"; };
 		24FFEF53254C2A3300257893 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		24FFEF59254C4E6900257893 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		24FFEF61254C4EFF00257893 /* ShowingRoutineDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingRoutineDetail.swift; sourceTree = "<group>"; };
 		318967FF723418B00BD506CB /* Pods-FitnessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.release.xcconfig"; path = "Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		50DE087F87EB8A3E822FBBCF /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 		905147CFC728A1853084E00D /* Pods_FitnessAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -589,6 +593,7 @@
 			isa = PBXGroup;
 			children = (
 				24A0771D2548D99000EE111F /* Setup */,
+				24FFEF58254C4DFE00257893 /* Home */,
 				24FFEF4E254C297B00257893 /* MainTabBarCoordinatedController.swift */,
 			);
 			path = Screens;
@@ -619,6 +624,7 @@
 			children = (
 				24A0773B2548DC7400EE111F /* MovingToNextVC.swift */,
 				246C82412549CADC009AD69F /* CreatingAccount.swift */,
+				24FFEF61254C4EFF00257893 /* ShowingRoutineDetail.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -629,6 +635,14 @@
 				24A077442548DDF100EE111F /* Media.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		24FFEF58254C4DFE00257893 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				24FFEF59254C4E6900257893 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		6205599383BBF7C57B52D690 /* Pods */ = {
@@ -899,7 +913,9 @@
 				24534402254B785900726E8F /* UserDTO.swift in Sources */,
 				24FFEF45254C280D00257893 /* MyGoalCoordinator.swift in Sources */,
 				24A077112548D44400EE111F /* AppCoordinator.swift in Sources */,
+				24FFEF5A254C4E6900257893 /* HomeViewController.swift in Sources */,
 				24379A9025458A7C008B1E26 /* ViewController.swift in Sources */,
+				24FFEF62254C4EFF00257893 /* ShowingRoutineDetail.swift in Sources */,
 				2453441C254B7CB700726E8F /* ProfileCreationWizard.swift in Sources */,
 				245343F0254B723E00726E8F /* Storable.swift in Sources */,
 				245343F8254B723E00726E8F /* User.swift in Sources */,
