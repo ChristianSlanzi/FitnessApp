@@ -54,6 +54,8 @@ extension AppDataManager {
         initialiseOnBoarding()
         initialiseProfileQuestions()
         initialiseDailyEntries()
+        initialiseExercises()
+        initialiseRoutines()
     }
     
     private func initialiseOnBoarding() {
@@ -148,5 +150,78 @@ extension AppDataManager {
     private func initialiseDailyEntries() {
         let dataEntries = DataEntryGenerator().generateRandomDataEntries()
         self.dailyEntries = dataEntries
+    }
+    
+    private func initialiseExercises() {
+        //TODO: this should be workouts
+        let exercises: [ExerciseDTO] = [ExerciseDTO("Workout1", "NEW WORKOUT FOR YOU", "12 new"),
+        ExerciseDTO("Workout2", "NEW WORKOUT FOR YOU", "12 new"),
+        ExerciseDTO("Workout3", "NEW WORKOUT FOR YOU", "12 new"),
+        ExerciseDTO("Workout4", "NEW WORKOUT FOR YOU", "12 new"),
+        ExerciseDTO("Workout5", "NEW WORKOUT FOR YOU", "12 new")]
+        
+        self.exercises = exercises
+    }
+    
+    private func initialiseRoutines() {
+        let items1 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
+        ExerciseDTO("RoutinePreview1", "WALKING LUNGES", "....."),
+        ExerciseDTO("RoutinePreview1", "STRAIGH MIX LUNGES", ".....")]
+        
+        let items2 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
+        ExerciseDTO("RoutinePreview1", "LARRY SCOTT", "....."),
+        ExerciseDTO("RoutinePreview1", "STRAIGH MIX LUNGES", ".....")]
+    
+        let items3 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
+        ExerciseDTO("RoutinePreview1", "BREAST PRESS", "....."),
+        ExerciseDTO("RoutinePreview1", "STRAIGH MIX LUNGES", ".....")]
+        
+        let items4 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
+        ExerciseDTO("RoutinePreview1", "SHOULDER PRESS", "....."),
+        ExerciseDTO("RoutinePreview1", "STRAIGH MIX LUNGES", ".....")]
+        
+        let items5 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
+        ExerciseDTO("RoutinePreview1", "BACK PULLS", "....."),
+        ExerciseDTO("RoutinePreview1", "STRAIGH MIX LUNGES", ".....")]
+        
+        let items6 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
+        ExerciseDTO("RoutinePreview1", "SIX PACKS PRESS", "....."),
+        ExerciseDTO("RoutinePreview1", "LATERAL", ".....")]
+        
+        let items7 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
+        ExerciseDTO("RoutinePreview1", "TRICEPS PULLS", "....."),
+        ExerciseDTO("RoutinePreview1", "STRAIGH MIX LUNGES", ".....")]
+        
+        let session1Infos = SessionInfos(sessionTitle: "DAY 1",
+                                         description: "The objective of this set is to form your legs",
+                                         difficulty: "HIGH")
+        let session2Infos = SessionInfos(sessionTitle: "DAY 2",
+                                         description: "The objective of this set is to form your biceps",
+                                         difficulty: "HIGH")
+        let session3Infos = SessionInfos(sessionTitle: "DAY 3",
+                                         description: "The objective of this set is to form your breast",
+                                         difficulty: "HIGH")
+        let session4Infos = SessionInfos(sessionTitle: "DAY 4",
+                                         description: "The objective of this set is to form your shoulders",
+                                         difficulty: "HIGH")
+        let session5Infos = SessionInfos(sessionTitle: "DAY 5",
+                                         description: "The objective of this set is to form your back",
+                                         difficulty: "HIGH")
+        let session6Infos = SessionInfos(sessionTitle: "DAY 6",
+                                         description: "The objective of this set is to form your tummy",
+                                         difficulty: "HIGH")
+        let session7Infos = SessionInfos(sessionTitle: "DAY 7",
+                                         description: "The objective of this set is to form your triceps",
+                                         difficulty: "HIGH")
+        
+        let routines: [RoutineDTO] = [RoutineDTO("Routine1", "WALKING LUNGES", "Today", session1Infos, items1),
+        RoutineDTO("Routine2", "WALKING LUNGES", "Tomorrow", session2Infos, items2),
+        RoutineDTO("Routine3", "WALKING LUNGES", "Wednesday", session3Infos, items3),
+        RoutineDTO("Routine1", "WALKING LUNGES", "Thursday", session4Infos, items4),
+        RoutineDTO("Routine2", "WALKING LUNGES", "Friday", session5Infos, items5),
+        RoutineDTO("Routine3", "WALKING LUNGES", "Saturday", session6Infos, items6),
+        RoutineDTO("Routine1", "WALKING LUNGES", "Sunday", session7Infos, items7)]
+        
+        self.routines = routines
     }
 }

@@ -29,6 +29,8 @@ class RoutineContentCell: UICollectionViewCell, ConfigurableCell, CoordinatedCel
         let imageView = UIImageView()
         imageView.layer.cornerRadius = 12
         
+        //TODO: add Placeholder (Remove Media assets, no bg is shown)
+        
         //TODO: doesnt work, bounds not set yet
         /*
         let myLayer = CALayer()
