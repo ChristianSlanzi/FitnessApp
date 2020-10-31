@@ -30,6 +30,42 @@ class MainCoordinator: NSObject, Coordinator {
 
 extension MainCoordinator: ShowingRoutineDetail {
     func showRoutineDetail(with routine: RoutineDTO) {
-        //TODO
+        let controller = WorkoutRoutineDetailController(routine: routine)
+        controller.bgImageName = "ScreenBackground"
+        controller.coordinator = self
+        //injection of routine in the controller.. as initializer or as property
+
+        //Keeping all the other attributes of the title: If you just want change the color you could do like this:
+/*
+        if var textAttributes = navigationController.navigationBar.titleTextAttributes {
+            textAttributes[NSAttributedString.Key.foregroundColor] = UIColor.white
+            navigationController.navigationBar.titleTextAttributes = textAttributes
+        }*/
+        
+        //TODO: code should not be here.. refactor
+        navigationController.isNavigationBarHidden = false
+        navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController.navigationBar.shadowImage = UIImage()
+        navigationController.navigationBar.isTranslucent = true
+        
+        navigationController.pushViewController(controller, animated: false)
+    }
+}
+
+extension MainCoordinator: StartingRoutine {
+    func startRoutineCountdown(with routine: RoutineDTO) {
+        
+    }
+    
+    func startRoutinePlay(with routine: RoutineDTO) {
+        
+    }
+    
+    func stopRoutine() {
+        
+    }
+    
+    func completeRoutine() {
+        
     }
 }

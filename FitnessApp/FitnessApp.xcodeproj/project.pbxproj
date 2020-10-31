@@ -21,6 +21,8 @@
 		241A0F8F254DE8B400095693 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0F8B254DE8B400095693 /* SettingsCell.swift */; };
 		241A0F90254DE8B400095693 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0F8C254DE8B400095693 /* AvatarView.swift */; };
 		241A0F91254DE8B400095693 /* SettingsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0F8D254DE8B400095693 /* SettingsContentView.swift */; };
+		241A0F98254DEB9C00095693 /* WorkoutRoutineDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0F97254DEB9C00095693 /* WorkoutRoutineDetailController.swift */; };
+		241A0F9D254DECB900095693 /* StartingRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0F9C254DECB900095693 /* StartingRoutine.swift */; };
 		24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379A8B25458A7C008B1E26 /* AppDelegate.swift */; };
 		24379A8E25458A7C008B1E26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379A8D25458A7C008B1E26 /* SceneDelegate.swift */; };
 		24379A9025458A7C008B1E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379A8F25458A7C008B1E26 /* ViewController.swift */; };
@@ -140,6 +142,8 @@
 		241A0F8B254DE8B400095693 /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		241A0F8C254DE8B400095693 /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		241A0F8D254DE8B400095693 /* SettingsContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsContentView.swift; sourceTree = "<group>"; };
+		241A0F97254DEB9C00095693 /* WorkoutRoutineDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRoutineDetailController.swift; sourceTree = "<group>"; };
+		241A0F9C254DECB900095693 /* StartingRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingRoutine.swift; sourceTree = "<group>"; };
 		24379A8825458A7C008B1E26 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24379A8B25458A7C008B1E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24379A8D25458A7C008B1E26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -317,6 +321,22 @@
 				241A0F8B254DE8B400095693 /* SettingsCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		241A0F95254DEB2200095693 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				241A0F96254DEB3B00095693 /* DetailVC */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		241A0F96254DEB3B00095693 /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				241A0F97254DEB9C00095693 /* WorkoutRoutineDetailController.swift */,
+			);
+			path = DetailVC;
 			sourceTree = "<group>";
 		};
 		24379A7F25458A7C008B1E26 = {
@@ -732,6 +752,7 @@
 				24A0773B2548DC7400EE111F /* MovingToNextVC.swift */,
 				246C82412549CADC009AD69F /* CreatingAccount.swift */,
 				24FFEF61254C4EFF00257893 /* ShowingRoutineDetail.swift */,
+				241A0F9C254DECB900095693 /* StartingRoutine.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -748,6 +769,7 @@
 		24FFEF58254C4DFE00257893 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				241A0F95254DEB2200095693 /* Detail */,
 				240A89BA254D79220094EE7B /* HomeChildVC */,
 				24FFEF59254C4E6900257893 /* HomeViewController.swift */,
 			);
@@ -1039,6 +1061,7 @@
 				24534407254B789900726E8F /* UserAccountDTO.swift in Sources */,
 				245343F3254B723E00726E8F /* Sorted.swift in Sources */,
 				2453440C254B78C500726E8F /* UserProfileDTO.swift in Sources */,
+				241A0F9D254DECB900095693 /* StartingRoutine.swift in Sources */,
 				24FFEF40254C27D800257893 /* ExploreCoordinator.swift in Sources */,
 				24A077202548D9BF00EE111F /* LoadingViewController.swift in Sources */,
 				245343F4254B723E00726E8F /* CoreDataManager.swift in Sources */,
@@ -1062,6 +1085,7 @@
 				240A89C6254D7AC10094EE7B /* ExerciseCell.swift in Sources */,
 				240A89D6254D9EA50094EE7B /* ExploreViewController.swift in Sources */,
 				245343EF254B723E00726E8F /* MappableProtocol.swift in Sources */,
+				241A0F98254DEB9C00095693 /* WorkoutRoutineDetailController.swift in Sources */,
 				245343EE254B723E00726E8F /* DataManager.swift in Sources */,
 				245343F7254B723E00726E8F /* RealmProvider.swift in Sources */,
 				24534420254B7CB700726E8F /* ProfileCreationPage.swift in Sources */,
