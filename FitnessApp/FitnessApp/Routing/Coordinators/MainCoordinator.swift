@@ -8,7 +8,7 @@
 import UIKit
 import CS_CoreModule
 
-class MainCoordinator: NSObject, Coordinator, ShowingRoutineDetail {
+class MainCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
     
     var navigationController: UINavigationController
@@ -26,5 +26,10 @@ class MainCoordinator: NSObject, Coordinator, ShowingRoutineDetail {
         controller.tabBarItem = UITabBarItem(title: "screen_title_Home".localized, image: UIImage(named: "Home"), tag: 0)
         navigationController.pushViewController(controller, animated: false)
     }
-    
+}
+
+extension MainCoordinator: ShowingRoutineDetail {
+    func showRoutineDetail(with routine: RoutineDTO) {
+        //TODO
+    }
 }

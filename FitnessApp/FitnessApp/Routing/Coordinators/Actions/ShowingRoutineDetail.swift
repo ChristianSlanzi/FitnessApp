@@ -6,5 +6,5 @@
 //
 
 protocol ShowingRoutineDetail: AnyObject {
-    //func showRoutineDetail(with routine: RoutineDTO)
+    func showRoutineDetail(with routine: RoutineDTO)
 }

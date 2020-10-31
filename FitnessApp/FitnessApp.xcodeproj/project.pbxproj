@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240A89B1254D77460094EE7B /* RoutineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89B0254D77460094EE7B /* RoutineDTO.swift */; };
+		240A89B6254D77750094EE7B /* ExerciseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89B5254D77750094EE7B /* ExerciseDTO.swift */; };
+		240A89BE254D79AD0094EE7B /* RoutineContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89BD254D79AD0094EE7B /* RoutineContentCell.swift */; };
+		240A89C6254D7AC10094EE7B /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89C5254D7AC10094EE7B /* ExerciseCell.swift */; };
 		24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379A8B25458A7C008B1E26 /* AppDelegate.swift */; };
 		24379A8E25458A7C008B1E26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379A8D25458A7C008B1E26 /* SceneDelegate.swift */; };
 		24379A9025458A7C008B1E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379A8F25458A7C008B1E26 /* ViewController.swift */; };
@@ -112,6 +116,10 @@
 
 /* Begin PBXFileReference section */
 		1B5B9C6388CDE4CE733CA37F /* Pods-FitnessAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		240A89B0254D77460094EE7B /* RoutineDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineDTO.swift; sourceTree = "<group>"; };
+		240A89B5254D77750094EE7B /* ExerciseDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseDTO.swift; sourceTree = "<group>"; };
+		240A89BD254D79AD0094EE7B /* RoutineContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineContentCell.swift; sourceTree = "<group>"; };
+		240A89C5254D7AC10094EE7B /* ExerciseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		24379A8825458A7C008B1E26 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24379A8B25458A7C008B1E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24379A8D25458A7C008B1E26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -221,6 +229,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240A89BA254D79220094EE7B /* HomeChildVC */ = {
+			isa = PBXGroup;
+			children = (
+				240A89BB254D79750094EE7B /* ChildController */,
+			);
+			path = HomeChildVC;
+			sourceTree = "<group>";
+		};
+		240A89BB254D79750094EE7B /* ChildController */ = {
+			isa = PBXGroup;
+			children = (
+				240A89BC254D798B0094EE7B /* View */,
+			);
+			path = ChildController;
+			sourceTree = "<group>";
+		};
+		240A89BC254D798B0094EE7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				240A89C5254D7AC10094EE7B /* ExerciseCell.swift */,
+				240A89BD254D79AD0094EE7B /* RoutineContentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		24379A7F25458A7C008B1E26 = {
 			isa = PBXGroup;
 			children = (
@@ -517,6 +550,8 @@
 		246C81F32549AD83009AD69F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				240A89B5254D77750094EE7B /* ExerciseDTO.swift */,
+				240A89B0254D77460094EE7B /* RoutineDTO.swift */,
 				24534401254B785900726E8F /* UserDTO.swift */,
 				24534406254B789900726E8F /* UserAccountDTO.swift */,
 				2453440B254B78C500726E8F /* UserProfileDTO.swift */,
@@ -643,6 +678,7 @@
 		24FFEF58254C4DFE00257893 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				240A89BA254D79220094EE7B /* HomeChildVC */,
 				24FFEF59254C4E6900257893 /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -911,6 +947,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				240A89B6254D77750094EE7B /* ExerciseDTO.swift in Sources */,
 				245343CD254B6F4300726E8F /* CreateAccountViewController.swift in Sources */,
 				245343F2254B723E00726E8F /* RealmObject+Storable.swift in Sources */,
 				24534402254B785900726E8F /* UserDTO.swift in Sources */,
@@ -944,6 +981,8 @@
 				24FFEF4F254C297B00257893 /* MainTabBarCoordinatedController.swift in Sources */,
 				245343F1254B723E00726E8F /* URL+Document.swift in Sources */,
 				245343F5254B723E00726E8F /* UserRepository.swift in Sources */,
+				240A89BE254D79AD0094EE7B /* RoutineContentCell.swift in Sources */,
+				240A89C6254D7AC10094EE7B /* ExerciseCell.swift in Sources */,
 				245343EF254B723E00726E8F /* MappableProtocol.swift in Sources */,
 				245343EE254B723E00726E8F /* DataManager.swift in Sources */,
 				245343F7254B723E00726E8F /* RealmProvider.swift in Sources */,
@@ -951,6 +990,7 @@
 				245343FD254B776200726E8F /* Gender.swift in Sources */,
 				245343C8254B6CE200726E8F /* SignupViewController.swift in Sources */,
 				245343ED254B723E00726E8F /* BaseRepository.swift in Sources */,
+				240A89B1254D77460094EE7B /* RoutineDTO.swift in Sources */,
 				24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */,
 				24FFEF97254C6EC200257893 /* DataEntryGenerator.swift in Sources */,
 				24534412254B7B3900726E8F /* ProfileCreationViewController.swift in Sources */,

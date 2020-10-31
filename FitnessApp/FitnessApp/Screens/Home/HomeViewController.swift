@@ -31,18 +31,27 @@ class HomeViewController: BaseViewController {
         return view
     }()
     */
-    private let barChart: BasicBarChart = {
+    private lazy var barChart: BasicBarChart = {
         let view = BasicBarChart()
         view.backgroundColor = .white
         view.layer.cornerRadius = 5
-        let dataEntries = DataEntryGenerator().generateEmptyDataEntries()
+        let dataEntries = dataManager.getDailyEntries()
         view.updateDataEntries(dataEntries: dataEntries, animated: false)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    lazy var contentVC: UIViewController = {
-        let rootVC = UIViewController()
+    lazy var contentVC: ContainerController<RoutineDTO, RoutineContentCell, ExerciseDTO, ExerciseCell> = {
+       let containerControllerModel = ContainerControllerModel(navigationItemTitle: "MY GOAL",
+                                                               collectionRowHeight: 219,
+                                                               tableRowHeight: 136,
+                                                               sectionTitles: ["ROUTINE", "SUGGESTED"],
+                                                               sectionTitleHexColor: "#626363")
+        
+        let rootVC = ContainerController<RoutineDTO, RoutineContentCell, ExerciseDTO, ExerciseCell>(model: containerControllerModel,
+                                                                                              collectionDatasource: dataManager.getRoutines(),
+                                                                                              datasource: dataManager.getExercises(),
+                                                                                              coordinator: self.coordinator)
         rootVC.view.translatesAutoresizingMaskIntoConstraints = false
         return rootVC
     }()
@@ -62,7 +71,7 @@ class HomeViewController: BaseViewController {
         
         view.addSubview(navigationBar)
         view.addSubview(barChart)
-        barChart.updateDataEntries(dataEntries: DataEntryGenerator().generateRandomDataEntries(), animated: false)
+        //barChart.updateDataEntries(dataEntries: dataManager.getDailyEntries(), animated: false)
 
         add(childController: contentVC)
         

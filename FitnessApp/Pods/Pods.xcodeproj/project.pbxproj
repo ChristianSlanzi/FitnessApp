@@ -57,6 +57,20 @@
 		226D6DB7F2363305E04284C2EEB13CA9 /* RLMObjectBase_Dynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B3C66035AAB92D0BE44FA609DCDF65 /* RLMObjectBase_Dynamic.h */; };
 		22808205AD6B101E52EA8B22499CC14D /* work_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26639B64B36AC10C1ACB6048AEEB13AC /* work_queue.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.20.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		23F32CE373A6A626F4CF12853BFF085A /* RLMRealmConfiguration+Sync.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D3305C388027F348BEAB03475D1261D /* RLMRealmConfiguration+Sync.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.20.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		240A8990254D73210094EE7B /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A897F254D73210094EE7B /* TableDataSource.swift */; };
+		240A8991254D73210094EE7B /* TableArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A8980254D73210094EE7B /* TableArrayDataProvider.swift */; };
+		240A8992254D73210094EE7B /* TableDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A8981254D73210094EE7B /* TableDataProvider.swift */; };
+		240A8993254D73210094EE7B /* TableArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A8982254D73210094EE7B /* TableArrayDataSource.swift */; };
+		240A8994254D73210094EE7B /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A8984254D73210094EE7B /* CollectionDataSource.swift */; };
+		240A8995254D73210094EE7B /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A8985254D73210094EE7B /* CollectionArrayDataSource.swift */; };
+		240A8996254D73210094EE7B /* CollectionDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A8986254D73210094EE7B /* CollectionDataProvider.swift */; };
+		240A8997254D73210094EE7B /* CollectionArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A8987254D73210094EE7B /* CollectionArrayDataProvider.swift */; };
+		240A8998254D73210094EE7B /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A8989254D73210094EE7B /* ContainerController.swift */; };
+		240A8999254D73210094EE7B /* ChildController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A898A254D73210094EE7B /* ChildController.swift */; };
+		240A899A254D73210094EE7B /* BaseContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A898C254D73210094EE7B /* BaseContainerCell.swift */; };
+		240A899B254D73210094EE7B /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A898E254D73210094EE7B /* ConfigurableCell.swift */; };
+		240A899C254D73210094EE7B /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A898F254D73210094EE7B /* ReusableCell.swift */; };
+		240A89A7254D74850094EE7B /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89A6254D74850094EE7B /* CustomHeader.swift */; };
 		2415B9FA3AE0E37230335EC9FB6CDB26 /* RLMMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CC4162E55EA801BBB0403A6099DC04B /* RLMMigration.h */; };
 		24FFEF67254C515D00257893 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF66254C515D00257893 /* NavigationBar.swift */; };
 		24FFEF7B254C5C4B00257893 /* BasicBarChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF72254C5C4B00257893 /* BasicBarChartPresenter.swift */; };
@@ -517,6 +531,20 @@
 		214EC8845EF50CD099896E3712743AF9 /* UIAlertController+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertController+Ext.swift"; path = "CS_Common_Utils/Classes/Extensions/UIAlertController/UIAlertController+Ext.swift"; sourceTree = "<group>"; };
 		21CF45C395099015CEFE5E84B9D4E620 /* RequiredRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequiredRule.swift; path = CS_Common_Utils/Classes/Helpers/FieldValidator/Rules/RequiredRule.swift; sourceTree = "<group>"; };
 		22B50E5A6417122C4120BC3755960361 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
+		240A897F254D73210094EE7B /* TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		240A8980254D73210094EE7B /* TableArrayDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableArrayDataProvider.swift; sourceTree = "<group>"; };
+		240A8981254D73210094EE7B /* TableDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataProvider.swift; sourceTree = "<group>"; };
+		240A8982254D73210094EE7B /* TableArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableArrayDataSource.swift; sourceTree = "<group>"; };
+		240A8984254D73210094EE7B /* CollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		240A8985254D73210094EE7B /* CollectionArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataSource.swift; sourceTree = "<group>"; };
+		240A8986254D73210094EE7B /* CollectionDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDataProvider.swift; sourceTree = "<group>"; };
+		240A8987254D73210094EE7B /* CollectionArrayDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataProvider.swift; sourceTree = "<group>"; };
+		240A8989254D73210094EE7B /* ContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
+		240A898A254D73210094EE7B /* ChildController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildController.swift; sourceTree = "<group>"; };
+		240A898C254D73210094EE7B /* BaseContainerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseContainerCell.swift; sourceTree = "<group>"; };
+		240A898E254D73210094EE7B /* ConfigurableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		240A898F254D73210094EE7B /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		240A89A6254D74850094EE7B /* CustomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
 		24286D9483405F17AD28A3BFD3634E7A /* Debouncer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debouncer.swift; path = CS_Common_Utils/Classes/Helpers/Debounce/Debouncer.swift; sourceTree = "<group>"; };
 		2479EFC8C9490C735601D47BFBB2C4A4 /* Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sequence.swift; path = Sources/Overture/Sequence.swift; sourceTree = "<group>"; };
 		24FFEF66254C515D00257893 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
@@ -916,6 +944,92 @@
 			path = "../Target Support Files/Overture";
 			sourceTree = "<group>";
 		};
+		240A897B254D73210094EE7B /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				240A89A5254D74510094EE7B /* Headers */,
+				240A897C254D73210094EE7B /* GenericChildVC */,
+			);
+			name = Containers;
+			path = CS_Common_UI/Classes/Containers;
+			sourceTree = "<group>";
+		};
+		240A897C254D73210094EE7B /* GenericChildVC */ = {
+			isa = PBXGroup;
+			children = (
+				240A897D254D73210094EE7B /* DataSources */,
+				240A8988254D73210094EE7B /* Controller */,
+				240A898B254D73210094EE7B /* View */,
+				240A898D254D73210094EE7B /* CellAbstractions */,
+			);
+			path = GenericChildVC;
+			sourceTree = "<group>";
+		};
+		240A897D254D73210094EE7B /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				240A897E254D73210094EE7B /* TableView */,
+				240A8983254D73210094EE7B /* Collection */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		240A897E254D73210094EE7B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				240A897F254D73210094EE7B /* TableDataSource.swift */,
+				240A8980254D73210094EE7B /* TableArrayDataProvider.swift */,
+				240A8981254D73210094EE7B /* TableDataProvider.swift */,
+				240A8982254D73210094EE7B /* TableArrayDataSource.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		240A8983254D73210094EE7B /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				240A8984254D73210094EE7B /* CollectionDataSource.swift */,
+				240A8985254D73210094EE7B /* CollectionArrayDataSource.swift */,
+				240A8986254D73210094EE7B /* CollectionDataProvider.swift */,
+				240A8987254D73210094EE7B /* CollectionArrayDataProvider.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		240A8988254D73210094EE7B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				240A8989254D73210094EE7B /* ContainerController.swift */,
+				240A898A254D73210094EE7B /* ChildController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		240A898B254D73210094EE7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				240A898C254D73210094EE7B /* BaseContainerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		240A898D254D73210094EE7B /* CellAbstractions */ = {
+			isa = PBXGroup;
+			children = (
+				240A898E254D73210094EE7B /* ConfigurableCell.swift */,
+				240A898F254D73210094EE7B /* ReusableCell.swift */,
+			);
+			path = CellAbstractions;
+			sourceTree = "<group>";
+		};
+		240A89A5254D74510094EE7B /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				240A89A6254D74850094EE7B /* CustomHeader.swift */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		24FFEF70254C5C4B00257893 /* BarChart */ = {
 			isa = PBXGroup;
 			children = (
@@ -1207,6 +1321,7 @@
 		D5782E89C859874E231EF005101B38B3 /* CS_Common_UI */ = {
 			isa = PBXGroup;
 			children = (
+				240A897B254D73210094EE7B /* Containers */,
 				24FFEF70254C5C4B00257893 /* BarChart */,
 				69AF6CC0EDC1E7B9A64D57CCC9FDEE35 /* Adapter.swift */,
 				0AC5067BEF0038B7E7E3BE70BF691CC4 /* BaseViewController.swift */,
@@ -2024,8 +2139,13 @@
 				FF70DE6046825CDDF288D65FCAC918E2 /* BaseViewController.swift in Sources */,
 				7D582EBF298556000D873B649F5D002B /* CaptionView.swift in Sources */,
 				24FFEF7B254C5C4B00257893 /* BasicBarChartPresenter.swift in Sources */,
+				240A8999254D73210094EE7B /* ChildController.swift in Sources */,
+				240A8997254D73210094EE7B /* CollectionArrayDataProvider.swift in Sources */,
 				24FFEF7F254C5C4B00257893 /* CALayerExtension.swift in Sources */,
+				240A899A254D73210094EE7B /* BaseContainerCell.swift in Sources */,
+				240A8991254D73210094EE7B /* TableArrayDataProvider.swift in Sources */,
 				4193556B4577F616EE9D680C497B7D7C /* ColorThemeObserving.swift in Sources */,
+				240A899B254D73210094EE7B /* ConfigurableCell.swift in Sources */,
 				8083027ADC9E24B1D4093A4CC924DBBD /* ColorUpdatable.swift in Sources */,
 				045B4342B0D616BB1D216DF5F6C96388 /* CS_Common_UI-dummy.m in Sources */,
 				731B7069029CBDE68A224F750F17EEC7 /* CustomIndicatorView.swift in Sources */,
@@ -2034,23 +2154,32 @@
 				E0A9BF784631C704D34C4495E2A9B431 /* CustomStackView.swift in Sources */,
 				A4C7DF64D425609455E43AD56D031580 /* CustomTextField.swift in Sources */,
 				24FFEF67254C515D00257893 /* NavigationBar.swift in Sources */,
+				240A89A7254D74850094EE7B /* CustomHeader.swift in Sources */,
 				2E967B15085D2B9449C858F0A41BA78F /* CustomView.swift in Sources */,
+				240A8995254D73210094EE7B /* CollectionArrayDataSource.swift in Sources */,
 				3837A948B2808C8779E726535205CF08 /* InfoNotification.swift in Sources */,
 				A40B3F2C852F5676469AE68B6C2A3A88 /* Modal.swift in Sources */,
 				24FFEF7E254C5C4B00257893 /* CustomSegments.swift in Sources */,
 				087348A9B0297F2CC599779C7D1EB5B7 /* PopupNotification.swift in Sources */,
 				4D06285D99250F09B8CEE750D6C21746 /* TappableLabel.swift in Sources */,
 				DF324BD2C951111821BBB60E4058EDAA /* Theme.swift in Sources */,
+				240A8994254D73210094EE7B /* CollectionDataSource.swift in Sources */,
 				24FFEF7C254C5C4B00257893 /* BasicBarChart.swift in Sources */,
+				240A8996254D73210094EE7B /* CollectionDataProvider.swift in Sources */,
+				240A8993254D73210094EE7B /* TableArrayDataSource.swift in Sources */,
 				24FFEF82254C5C4B00257893 /* DataEntry.swift in Sources */,
 				CAE978A599E16D3598390D9C923E8D63 /* ThemeUsageExample.swift in Sources */,
+				240A8992254D73210094EE7B /* TableDataProvider.swift in Sources */,
 				FCC0441449E7DA2163DB99CC4D950793 /* UIColor+Palette.swift in Sources */,
+				240A899C254D73210094EE7B /* ReusableCell.swift in Sources */,
 				21327DA5F2D81FF5C20AA527B2756D03 /* UILabel+ColorUpdatable.swift in Sources */,
 				46747EA0AEC6996AF91F1957370617B9 /* UINavigationBar+ColorUpdatable.swift in Sources */,
 				D0869408940F317C03614AD4AEB3CD39 /* UITabBar+ColorUpdatable.swift in Sources */,
 				24FFEF81254C5C4B00257893 /* ArrayExtension.swift in Sources */,
+				240A8998254D73210094EE7B /* ContainerController.swift in Sources */,
 				24FFEF80254C5C4B00257893 /* UIBezierPathExtension.swift in Sources */,
 				24FFEF7D254C5C4B00257893 /* BasicBarEntry.swift in Sources */,
+				240A8990254D73210094EE7B /* TableDataSource.swift in Sources */,
 				33B179E8CA9D7C22839A19E2020BEF13 /* ValidableTextControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

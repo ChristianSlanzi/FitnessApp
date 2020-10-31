@@ -4,12 +4,20 @@
 //
 //  Created by Christian Slanzi on 28.10.20.
 //
+import CS_Common_UI
 
 class AppDataManager {
     
     private var onBoardingData: OnBoardingData?
     
     private var profileCreationQuestions: [ProfileQuestion] = [ProfileQuestion]()
+    
+    private var dailyEntries: [DataEntry] = [DataEntry]()
+    
+    private var routines: [RoutineDTO] = [RoutineDTO]() // a dictionary [day:workout]
+    //TODO: workouts? // a list of exercises
+    private var exercises: [ExerciseDTO] = [ExerciseDTO]()
+    
     
     private init() {
         initialise()
@@ -26,12 +34,26 @@ class AppDataManager {
         return profileCreationQuestions
     }
     
+    public func getDailyEntries() -> [DataEntry] {
+        return dailyEntries
+    }
+    
+    //routines
+    public func getRoutines() -> [RoutineDTO] {
+        return routines
+    }
+    
+    public func getExercises() -> [ExerciseDTO] {
+        return exercises
+    }
+    
 }
 
 extension AppDataManager {
     private func initialise() {
         initialiseOnBoarding()
         initialiseProfileQuestions()
+        initialiseDailyEntries()
     }
     
     private func initialiseOnBoarding() {
@@ -121,5 +143,10 @@ extension AppDataManager {
         profileQuestions.append(question)
         
         profileCreationQuestions = profileQuestions
+    }
+    
+    private func initialiseDailyEntries() {
+        let dataEntries = DataEntryGenerator().generateRandomDataEntries()
+        self.dailyEntries = dataEntries
     }
 }
