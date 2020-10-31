@@ -19,6 +19,11 @@ class ExploreCoordinator: NSObject, Coordinator {
     }
     
     func start() {
+        let controller =  ExploreViewController()
+        controller.bgImageName = "ScreenBackground"
 
+        controller.tabBarItem = UITabBarItem(title: "screen_title_Explore".localized, image: UIImage(named: "Explore"), tag: 0)
+        //navigationController.delegate = self
+        navigationController.pushViewController(controller, animated: false)
     }
 }
