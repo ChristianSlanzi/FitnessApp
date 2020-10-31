@@ -19,6 +19,11 @@ class MyGoalCoordinator: NSObject, Coordinator {
     }
     
     func start() {
-
+        let controller =  MyGoalViewController()
+        controller.bgImageName = "ScreenBackground"
+        
+        controller.tabBarItem = UITabBarItem(title: "screen_title_MyGoal".localized, image: UIImage(named: "Devices"), tag: 0)
+        //navigationController.delegate = self
+        navigationController.pushViewController(controller, animated: false)
     }
 }
