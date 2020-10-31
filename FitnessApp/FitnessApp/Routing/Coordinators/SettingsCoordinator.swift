@@ -19,6 +19,12 @@ class SettingsCoordinator: NSObject, Coordinator {
     }
     
     func start() {
-
+        let viewModel = SettingsViewModel()
+        let controller =  SettingsViewController(settingsViewModel: viewModel)
+        controller.bgImageName = "ScreenBackground"
+        
+        controller.tabBarItem = UITabBarItem(title: "screen_title_Settings".localized, image: UIImage(named: "Settings"), tag: 0)
+        //navigationController.delegate = self
+        navigationController.pushViewController(controller, animated: false)
     }
 }
