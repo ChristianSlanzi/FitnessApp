@@ -29,9 +29,22 @@ class VideoPreviewButton: CustomView {
         return imageView
     }()
     
-    private let videoPlayerView: UIView = {
+    // TODO: extract in a VideoPlayerViewModel to inject together with VideoData
+    private let videoPlayerView: VideoPlayerView = {
         
-        let view = UIView()
+        let name = "bulletTrain"
+        let title = "Bullet Train Adventure"
+        let subtitle = "Enjoying the soothing view of passing towns in Japan"
+        
+        // TODO: make video parameter as optional
+        let urlPath = Bundle.main.path(forResource: name, ofType: "mp4")!
+        let url = URL(fileURLWithPath: urlPath)
+        let thumbURLPath = Bundle.main.path(forResource: name, ofType: "png")!
+        let thumbURL = URL(fileURLWithPath: thumbURLPath)
+        
+        let video = Video(url: url, thumbURL: thumbURL, title: title, subtitle: subtitle)
+        
+        let view = VideoPlayerView(clip: video)
         view.backgroundColor = .black
         view.translatesAutoresizingMaskIntoConstraints = false
 

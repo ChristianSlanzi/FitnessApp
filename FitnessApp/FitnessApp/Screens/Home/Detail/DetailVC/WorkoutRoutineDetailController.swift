@@ -24,10 +24,10 @@ class WorkoutRoutineDetailController: BaseViewController {
         
     }()
     
-    lazy var videoPreviewButton: UIImageView = {
-        var button = UIImageView()
+    lazy var videoPreviewButton: VideoPreviewButton = {
+        var button = VideoPreviewButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.image=UIImage(named:routine.previewName)
+        button.setImage(routine.previewName)//, for: .normal)
         return button
     }()
     

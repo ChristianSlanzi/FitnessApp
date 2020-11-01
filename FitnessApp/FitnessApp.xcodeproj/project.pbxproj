@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2409FE72254F08ED0082C839 /* bulletTrain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2409FE6F254F08ED0082C839 /* bulletTrain.mp4 */; };
+		2409FE73254F08ED0082C839 /* bulletTrain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2409FE71254F08ED0082C839 /* bulletTrain.png */; };
 		240A89B1254D77460094EE7B /* RoutineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89B0254D77460094EE7B /* RoutineDTO.swift */; };
 		240A89B6254D77750094EE7B /* ExerciseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89B5254D77750094EE7B /* ExerciseDTO.swift */; };
 		240A89BE254D79AD0094EE7B /* RoutineContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89BD254D79AD0094EE7B /* RoutineContentCell.swift */; };
@@ -134,6 +136,8 @@
 
 /* Begin PBXFileReference section */
 		1B5B9C6388CDE4CE733CA37F /* Pods-FitnessAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2409FE6F254F08ED0082C839 /* bulletTrain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bulletTrain.mp4; sourceTree = "<group>"; };
+		2409FE71254F08ED0082C839 /* bulletTrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bulletTrain.png; sourceTree = "<group>"; };
 		240A89B0254D77460094EE7B /* RoutineDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineDTO.swift; sourceTree = "<group>"; };
 		240A89B5254D77750094EE7B /* ExerciseDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseDTO.swift; sourceTree = "<group>"; };
 		240A89BD254D79AD0094EE7B /* RoutineContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineContentCell.swift; sourceTree = "<group>"; };
@@ -265,6 +269,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2409FE6D254F08ED0082C839 /* Local Data */ = {
+			isa = PBXGroup;
+			children = (
+				2409FE6E254F08ED0082C839 /* Videos */,
+				2409FE70254F08ED0082C839 /* Thumbnails */,
+			);
+			path = "Local Data";
+			sourceTree = "<group>";
+		};
+		2409FE6E254F08ED0082C839 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				2409FE6F254F08ED0082C839 /* bulletTrain.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		2409FE70254F08ED0082C839 /* Thumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				2409FE71254F08ED0082C839 /* bulletTrain.png */,
+			);
+			path = Thumbnails;
+			sourceTree = "<group>";
+		};
 		240A89BA254D79220094EE7B /* HomeChildVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -653,6 +682,7 @@
 		246C81F22549AD79009AD69F /* Stub */ = {
 			isa = PBXGroup;
 			children = (
+				2409FE6D254F08ED0082C839 /* Local Data */,
 				240A89CA254D91190094EE7B /* Media.xcassets */,
 				24FFEF96254C6EC200257893 /* DataEntryGenerator.swift */,
 			);
@@ -965,9 +995,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				24A077452548DDF100EE111F /* Media.xcassets in Resources */,
+				2409FE73254F08ED0082C839 /* bulletTrain.png in Resources */,
 				24379A9825458A7F008B1E26 /* LaunchScreen.storyboard in Resources */,
 				24379A9525458A7F008B1E26 /* Assets.xcassets in Resources */,
 				240A89D0254D9E010094EE7B /* Localizable.strings in Resources */,
+				2409FE72254F08ED0082C839 /* bulletTrain.mp4 in Resources */,
 				24AD864325475D1F00C57EDC /* README.md in Resources */,
 				240A89CB254D91190094EE7B /* Media.xcassets in Resources */,
 				24379A9325458A7C008B1E26 /* Main.storyboard in Resources */,

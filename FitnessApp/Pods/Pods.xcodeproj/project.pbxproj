@@ -57,6 +57,9 @@
 		226D6DB7F2363305E04284C2EEB13CA9 /* RLMObjectBase_Dynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B3C66035AAB92D0BE44FA609DCDF65 /* RLMObjectBase_Dynamic.h */; };
 		22808205AD6B101E52EA8B22499CC14D /* work_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26639B64B36AC10C1ACB6048AEEB13AC /* work_queue.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.20.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		23F32CE373A6A626F4CF12853BFF085A /* RLMRealmConfiguration+Sync.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8D3305C388027F348BEAB03475D1261D /* RLMRealmConfiguration+Sync.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.20.0\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		2409FE57254F061F0082C839 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE54254F061F0082C839 /* VideoPlayerView.swift */; };
+		2409FE58254F061F0082C839 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE55254F061F0082C839 /* Video.swift */; };
+		2409FE59254F061F0082C839 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE56254F061F0082C839 /* AVPlayerView.swift */; };
 		240A8990254D73210094EE7B /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A897F254D73210094EE7B /* TableDataSource.swift */; };
 		240A8991254D73210094EE7B /* TableArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A8980254D73210094EE7B /* TableArrayDataProvider.swift */; };
 		240A8992254D73210094EE7B /* TableDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A8981254D73210094EE7B /* TableDataProvider.swift */; };
@@ -531,6 +534,9 @@
 		214EC8845EF50CD099896E3712743AF9 /* UIAlertController+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertController+Ext.swift"; path = "CS_Common_Utils/Classes/Extensions/UIAlertController/UIAlertController+Ext.swift"; sourceTree = "<group>"; };
 		21CF45C395099015CEFE5E84B9D4E620 /* RequiredRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequiredRule.swift; path = CS_Common_Utils/Classes/Helpers/FieldValidator/Rules/RequiredRule.swift; sourceTree = "<group>"; };
 		22B50E5A6417122C4120BC3755960361 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2409FE54254F061F0082C839 /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		2409FE55254F061F0082C839 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		2409FE56254F061F0082C839 /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
 		240A897F254D73210094EE7B /* TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 		240A8980254D73210094EE7B /* TableArrayDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableArrayDataProvider.swift; sourceTree = "<group>"; };
 		240A8981254D73210094EE7B /* TableDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataProvider.swift; sourceTree = "<group>"; };
@@ -944,6 +950,25 @@
 			path = "../Target Support Files/Overture";
 			sourceTree = "<group>";
 		};
+		2409FE52254F061F0082C839 /* ContentPlayers */ = {
+			isa = PBXGroup;
+			children = (
+				2409FE53254F061F0082C839 /* Video */,
+			);
+			name = ContentPlayers;
+			path = CS_Common_UI/Classes/ContentPlayers;
+			sourceTree = "<group>";
+		};
+		2409FE53254F061F0082C839 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				2409FE54254F061F0082C839 /* VideoPlayerView.swift */,
+				2409FE55254F061F0082C839 /* Video.swift */,
+				2409FE56254F061F0082C839 /* AVPlayerView.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		240A897B254D73210094EE7B /* Containers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1321,6 +1346,7 @@
 		D5782E89C859874E231EF005101B38B3 /* CS_Common_UI */ = {
 			isa = PBXGroup;
 			children = (
+				2409FE52254F061F0082C839 /* ContentPlayers */,
 				240A897B254D73210094EE7B /* Containers */,
 				24FFEF70254C5C4B00257893 /* BarChart */,
 				69AF6CC0EDC1E7B9A64D57CCC9FDEE35 /* Adapter.swift */,
@@ -2148,6 +2174,7 @@
 				240A899B254D73210094EE7B /* ConfigurableCell.swift in Sources */,
 				8083027ADC9E24B1D4093A4CC924DBBD /* ColorUpdatable.swift in Sources */,
 				045B4342B0D616BB1D216DF5F6C96388 /* CS_Common_UI-dummy.m in Sources */,
+				2409FE58254F061F0082C839 /* Video.swift in Sources */,
 				731B7069029CBDE68A224F750F17EEC7 /* CustomIndicatorView.swift in Sources */,
 				90744BCD50748AE387DA62A7A6291A76 /* CustomNotification.swift in Sources */,
 				64E98312A2D411F63B29CB832D7A918E /* CustomScrollViewController.swift in Sources */,
@@ -2164,6 +2191,7 @@
 				4D06285D99250F09B8CEE750D6C21746 /* TappableLabel.swift in Sources */,
 				DF324BD2C951111821BBB60E4058EDAA /* Theme.swift in Sources */,
 				240A8994254D73210094EE7B /* CollectionDataSource.swift in Sources */,
+				2409FE57254F061F0082C839 /* VideoPlayerView.swift in Sources */,
 				24FFEF7C254C5C4B00257893 /* BasicBarChart.swift in Sources */,
 				240A8996254D73210094EE7B /* CollectionDataProvider.swift in Sources */,
 				240A8993254D73210094EE7B /* TableArrayDataSource.swift in Sources */,
@@ -2177,6 +2205,7 @@
 				D0869408940F317C03614AD4AEB3CD39 /* UITabBar+ColorUpdatable.swift in Sources */,
 				24FFEF81254C5C4B00257893 /* ArrayExtension.swift in Sources */,
 				240A8998254D73210094EE7B /* ContainerController.swift in Sources */,
+				2409FE59254F061F0082C839 /* AVPlayerView.swift in Sources */,
 				24FFEF80254C5C4B00257893 /* UIBezierPathExtension.swift in Sources */,
 				24FFEF7D254C5C4B00257893 /* BasicBarEntry.swift in Sources */,
 				240A8990254D73210094EE7B /* TableDataSource.swift in Sources */,
