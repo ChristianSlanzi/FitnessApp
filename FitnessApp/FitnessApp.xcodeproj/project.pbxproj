@@ -23,6 +23,12 @@
 		241A0F91254DE8B400095693 /* SettingsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0F8D254DE8B400095693 /* SettingsContentView.swift */; };
 		241A0F98254DEB9C00095693 /* WorkoutRoutineDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0F97254DEB9C00095693 /* WorkoutRoutineDetailController.swift */; };
 		241A0F9D254DECB900095693 /* StartingRoutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0F9C254DECB900095693 /* StartingRoutine.swift */; };
+		241A0FA3254DF07200095693 /* RoutineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0FA2254DF07200095693 /* RoutineDetailView.swift */; };
+		241A0FAC254DF0ED00095693 /* RoutineInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0FA7254DF0ED00095693 /* RoutineInfoView.swift */; };
+		241A0FAD254DF0ED00095693 /* RoutineDifficultyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0FA8254DF0ED00095693 /* RoutineDifficultyView.swift */; };
+		241A0FAE254DF0ED00095693 /* VideoPreviewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0FA9254DF0ED00095693 /* VideoPreviewButton.swift */; };
+		241A0FAF254DF0ED00095693 /* RoutineInfoContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0FAA254DF0ED00095693 /* RoutineInfoContent.swift */; };
+		241A0FB0254DF0ED00095693 /* RoutineExerciseTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0FAB254DF0ED00095693 /* RoutineExerciseTable.swift */; };
 		24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379A8B25458A7C008B1E26 /* AppDelegate.swift */; };
 		24379A8E25458A7C008B1E26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379A8D25458A7C008B1E26 /* SceneDelegate.swift */; };
 		24379A9025458A7C008B1E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379A8F25458A7C008B1E26 /* ViewController.swift */; };
@@ -144,6 +150,12 @@
 		241A0F8D254DE8B400095693 /* SettingsContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsContentView.swift; sourceTree = "<group>"; };
 		241A0F97254DEB9C00095693 /* WorkoutRoutineDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRoutineDetailController.swift; sourceTree = "<group>"; };
 		241A0F9C254DECB900095693 /* StartingRoutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingRoutine.swift; sourceTree = "<group>"; };
+		241A0FA2254DF07200095693 /* RoutineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailView.swift; sourceTree = "<group>"; };
+		241A0FA7254DF0ED00095693 /* RoutineInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineInfoView.swift; sourceTree = "<group>"; };
+		241A0FA8254DF0ED00095693 /* RoutineDifficultyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineDifficultyView.swift; sourceTree = "<group>"; };
+		241A0FA9254DF0ED00095693 /* VideoPreviewButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPreviewButton.swift; sourceTree = "<group>"; };
+		241A0FAA254DF0ED00095693 /* RoutineInfoContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineInfoContent.swift; sourceTree = "<group>"; };
+		241A0FAB254DF0ED00095693 /* RoutineExerciseTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineExerciseTable.swift; sourceTree = "<group>"; };
 		24379A8825458A7C008B1E26 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24379A8B25458A7C008B1E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24379A8D25458A7C008B1E26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -334,9 +346,23 @@
 		241A0F96254DEB3B00095693 /* DetailVC */ = {
 			isa = PBXGroup;
 			children = (
+				241A0FA1254DF05700095693 /* Views */,
 				241A0F97254DEB9C00095693 /* WorkoutRoutineDetailController.swift */,
 			);
 			path = DetailVC;
+			sourceTree = "<group>";
+		};
+		241A0FA1254DF05700095693 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				241A0FA8254DF0ED00095693 /* RoutineDifficultyView.swift */,
+				241A0FAB254DF0ED00095693 /* RoutineExerciseTable.swift */,
+				241A0FAA254DF0ED00095693 /* RoutineInfoContent.swift */,
+				241A0FA7254DF0ED00095693 /* RoutineInfoView.swift */,
+				241A0FA9254DF0ED00095693 /* VideoPreviewButton.swift */,
+				241A0FA2254DF07200095693 /* RoutineDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		24379A7F25458A7C008B1E26 = {
@@ -1051,13 +1077,16 @@
 				24FFEF5A254C4E6900257893 /* HomeViewController.swift in Sources */,
 				24379A9025458A7C008B1E26 /* ViewController.swift in Sources */,
 				24FFEF62254C4EFF00257893 /* ShowingRoutineDetail.swift in Sources */,
+				241A0FAD254DF0ED00095693 /* RoutineDifficultyView.swift in Sources */,
 				2453441C254B7CB700726E8F /* ProfileCreationWizard.swift in Sources */,
 				245343F0254B723E00726E8F /* Storable.swift in Sources */,
 				241A0F8E254DE8B400095693 /* PictureInfoView.swift in Sources */,
 				245343F8254B723E00726E8F /* User.swift in Sources */,
 				246C82422549CADC009AD69F /* CreatingAccount.swift in Sources */,
+				241A0FB0254DF0ED00095693 /* RoutineExerciseTable.swift in Sources */,
 				2453441D254B7CB700726E8F /* InputContentView.swift in Sources */,
 				24FFEF3B254C26F400257893 /* MainCoordinator.swift in Sources */,
+				241A0FAF254DF0ED00095693 /* RoutineInfoContent.swift in Sources */,
 				24534407254B789900726E8F /* UserAccountDTO.swift in Sources */,
 				245343F3254B723E00726E8F /* Sorted.swift in Sources */,
 				2453440C254B78C500726E8F /* UserProfileDTO.swift in Sources */,
@@ -1078,9 +1107,11 @@
 				246C82112549B014009AD69F /* OnBoardingPage.swift in Sources */,
 				24FFEF4F254C297B00257893 /* MainTabBarCoordinatedController.swift in Sources */,
 				245343F1254B723E00726E8F /* URL+Document.swift in Sources */,
+				241A0FAE254DF0ED00095693 /* VideoPreviewButton.swift in Sources */,
 				241A0F8F254DE8B400095693 /* SettingsCell.swift in Sources */,
 				245343F5254B723E00726E8F /* UserRepository.swift in Sources */,
 				241A0F76254DD54400095693 /* MyGoalViewController.swift in Sources */,
+				241A0FAC254DF0ED00095693 /* RoutineInfoView.swift in Sources */,
 				240A89BE254D79AD0094EE7B /* RoutineContentCell.swift in Sources */,
 				240A89C6254D7AC10094EE7B /* ExerciseCell.swift in Sources */,
 				240A89D6254D9EA50094EE7B /* ExploreViewController.swift in Sources */,
@@ -1095,6 +1126,7 @@
 				240A89B1254D77460094EE7B /* RoutineDTO.swift in Sources */,
 				24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */,
 				24FFEF97254C6EC200257893 /* DataEntryGenerator.swift in Sources */,
+				241A0FA3254DF07200095693 /* RoutineDetailView.swift in Sources */,
 				24534412254B7B3900726E8F /* ProfileCreationViewController.swift in Sources */,
 				24A0773C2548DC7400EE111F /* MovingToNextVC.swift in Sources */,
 				24379A8E25458A7C008B1E26 /* SceneDelegate.swift in Sources */,

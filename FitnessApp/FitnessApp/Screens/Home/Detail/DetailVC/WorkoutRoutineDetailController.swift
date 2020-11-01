@@ -42,8 +42,8 @@ class WorkoutRoutineDetailController: BaseViewController {
         return button
     }()
     
-    lazy var routineDetailView: UIView = {
-        var view = UIView()
+    lazy var routineDetailView: RoutineDetailView = {
+        var view = RoutineDetailView(routine: self.routine)
         // view.backgroundColor = .yellow //DEBUG
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
