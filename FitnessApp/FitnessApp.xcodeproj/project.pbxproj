@@ -10,6 +10,9 @@
 		2409FE72254F08ED0082C839 /* bulletTrain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2409FE6F254F08ED0082C839 /* bulletTrain.mp4 */; };
 		2409FE73254F08ED0082C839 /* bulletTrain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2409FE71254F08ED0082C839 /* bulletTrain.png */; };
 		2409FE79254F0B8D0082C839 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE78254F0B8D0082C839 /* CountdownViewController.swift */; };
+		2409FE8C254F10030082C839 /* RoutinePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE8B254F10030082C839 /* RoutinePlayViewController.swift */; };
+		2409FE92254F10530082C839 /* RoutinePlayInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE91254F10530082C839 /* RoutinePlayInfoView.swift */; };
+		2409FE97254F10AA0082C839 /* RoutinePauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE96254F10AA0082C839 /* RoutinePauseView.swift */; };
 		240A89B1254D77460094EE7B /* RoutineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89B0254D77460094EE7B /* RoutineDTO.swift */; };
 		240A89B6254D77750094EE7B /* ExerciseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89B5254D77750094EE7B /* ExerciseDTO.swift */; };
 		240A89BE254D79AD0094EE7B /* RoutineContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89BD254D79AD0094EE7B /* RoutineContentCell.swift */; };
@@ -140,6 +143,9 @@
 		2409FE6F254F08ED0082C839 /* bulletTrain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bulletTrain.mp4; sourceTree = "<group>"; };
 		2409FE71254F08ED0082C839 /* bulletTrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bulletTrain.png; sourceTree = "<group>"; };
 		2409FE78254F0B8D0082C839 /* CountdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
+		2409FE8B254F10030082C839 /* RoutinePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutinePlayViewController.swift; sourceTree = "<group>"; };
+		2409FE91254F10530082C839 /* RoutinePlayInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutinePlayInfoView.swift; sourceTree = "<group>"; };
+		2409FE96254F10AA0082C839 /* RoutinePauseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutinePauseView.swift; sourceTree = "<group>"; };
 		240A89B0254D77460094EE7B /* RoutineDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineDTO.swift; sourceTree = "<group>"; };
 		240A89B5254D77750094EE7B /* ExerciseDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseDTO.swift; sourceTree = "<group>"; };
 		240A89BD254D79AD0094EE7B /* RoutineContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineContentCell.swift; sourceTree = "<group>"; };
@@ -304,6 +310,24 @@
 			path = Countdown;
 			sourceTree = "<group>";
 		};
+		2409FE8A254F0FB70082C839 /* RoutinePlay */ = {
+			isa = PBXGroup;
+			children = (
+				2409FE90254F102E0082C839 /* Views */,
+				2409FE8B254F10030082C839 /* RoutinePlayViewController.swift */,
+			);
+			path = RoutinePlay;
+			sourceTree = "<group>";
+		};
+		2409FE90254F102E0082C839 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2409FE96254F10AA0082C839 /* RoutinePauseView.swift */,
+				2409FE91254F10530082C839 /* RoutinePlayInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		240A89BA254D79220094EE7B /* HomeChildVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +401,7 @@
 		241A0F95254DEB2200095693 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				2409FE8A254F0FB70082C839 /* RoutinePlay */,
 				2409FE77254F0B4D0082C839 /* Countdown */,
 				241A0F96254DEB3B00095693 /* DetailVC */,
 			);
@@ -1132,8 +1157,11 @@
 				241A0FAF254DF0ED00095693 /* RoutineInfoContent.swift in Sources */,
 				24534407254B789900726E8F /* UserAccountDTO.swift in Sources */,
 				245343F3254B723E00726E8F /* Sorted.swift in Sources */,
+				2409FE8C254F10030082C839 /* RoutinePlayViewController.swift in Sources */,
 				2453440C254B78C500726E8F /* UserProfileDTO.swift in Sources */,
+				2409FE97254F10AA0082C839 /* RoutinePauseView.swift in Sources */,
 				241A0F9D254DECB900095693 /* StartingRoutine.swift in Sources */,
+				2409FE92254F10530082C839 /* RoutinePlayInfoView.swift in Sources */,
 				24FFEF40254C27D800257893 /* ExploreCoordinator.swift in Sources */,
 				24A077202548D9BF00EE111F /* LoadingViewController.swift in Sources */,
 				245343F4254B723E00726E8F /* CoreDataManager.swift in Sources */,

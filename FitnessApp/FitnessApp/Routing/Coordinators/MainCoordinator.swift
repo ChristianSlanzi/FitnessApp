@@ -5,7 +5,7 @@
 //  Created by Christian Slanzi on 30.10.20.
 //
 
-import UIKit
+import CS_Common_Utils
 import CS_CoreModule
 
 class MainCoordinator: NSObject, Coordinator {
@@ -64,11 +64,21 @@ extension MainCoordinator: StartingRoutine {
     }
     
     func startRoutinePlay(with routine: RoutineDTO) {
-        
+        let rootVC = RoutinePlayViewController(routine: routine)
+        rootVC.modalPresentationStyle = .fullScreen
+        rootVC.bgImageName = "CountBackground"
+        rootVC.coordinator = self
+        navigationController.present(rootVC, animated: false, completion: {
+            // TODO
+        })
     }
     
     func stopRoutine() {
+        //doesnt work
+        //navigationController.getTopMostViewController()?.presentedViewController?.dismiss(animated: true)
         
+        //TODO: this dismiss also the view controller that presented the modals
+        navigationController.getTopMostViewController()?.dismiss(animated: true)
     }
     
     func completeRoutine() {
