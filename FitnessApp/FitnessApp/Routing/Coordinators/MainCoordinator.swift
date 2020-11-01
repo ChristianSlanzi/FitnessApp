@@ -54,7 +54,13 @@ extension MainCoordinator: ShowingRoutineDetail {
 
 extension MainCoordinator: StartingRoutine {
     func startRoutineCountdown(with routine: RoutineDTO) {
-        
+        let rootVC = CountdownViewController(routine: routine)
+        rootVC.modalPresentationStyle = .fullScreen
+        rootVC.bgImageName = "CountBackground"
+        rootVC.coordinator = self
+        navigationController.present(rootVC, animated: false, completion: {
+            //
+        })
     }
     
     func startRoutinePlay(with routine: RoutineDTO) {

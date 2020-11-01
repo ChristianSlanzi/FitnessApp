@@ -60,6 +60,8 @@
 		2409FE57254F061F0082C839 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE54254F061F0082C839 /* VideoPlayerView.swift */; };
 		2409FE58254F061F0082C839 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE55254F061F0082C839 /* Video.swift */; };
 		2409FE59254F061F0082C839 /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE56254F061F0082C839 /* AVPlayerView.swift */; };
+		2409FE80254F0C2F0082C839 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE7E254F0C2F0082C839 /* Countdown.swift */; };
+		2409FE81254F0C2F0082C839 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE7F254F0C2F0082C839 /* Stopwatch.swift */; };
 		240A8990254D73210094EE7B /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A897F254D73210094EE7B /* TableDataSource.swift */; };
 		240A8991254D73210094EE7B /* TableArrayDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A8980254D73210094EE7B /* TableArrayDataProvider.swift */; };
 		240A8992254D73210094EE7B /* TableDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A8981254D73210094EE7B /* TableDataProvider.swift */; };
@@ -537,6 +539,8 @@
 		2409FE54254F061F0082C839 /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		2409FE55254F061F0082C839 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		2409FE56254F061F0082C839 /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		2409FE7E254F0C2F0082C839 /* Countdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
+		2409FE7F254F0C2F0082C839 /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		240A897F254D73210094EE7B /* TableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 		240A8980254D73210094EE7B /* TableArrayDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableArrayDataProvider.swift; sourceTree = "<group>"; };
 		240A8981254D73210094EE7B /* TableDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableDataProvider.swift; sourceTree = "<group>"; };
@@ -969,6 +973,16 @@
 			path = Video;
 			sourceTree = "<group>";
 		};
+		2409FE7D254F0C2F0082C839 /* Timers */ = {
+			isa = PBXGroup;
+			children = (
+				2409FE7E254F0C2F0082C839 /* Countdown.swift */,
+				2409FE7F254F0C2F0082C839 /* Stopwatch.swift */,
+			);
+			name = Timers;
+			path = CS_Common_UI/Classes/Timers;
+			sourceTree = "<group>";
+		};
 		240A897B254D73210094EE7B /* Containers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1346,6 +1360,7 @@
 		D5782E89C859874E231EF005101B38B3 /* CS_Common_UI */ = {
 			isa = PBXGroup;
 			children = (
+				2409FE7D254F0C2F0082C839 /* Timers */,
 				2409FE52254F061F0082C839 /* ContentPlayers */,
 				240A897B254D73210094EE7B /* Containers */,
 				24FFEF70254C5C4B00257893 /* BarChart */,
@@ -2180,8 +2195,10 @@
 				64E98312A2D411F63B29CB832D7A918E /* CustomScrollViewController.swift in Sources */,
 				E0A9BF784631C704D34C4495E2A9B431 /* CustomStackView.swift in Sources */,
 				A4C7DF64D425609455E43AD56D031580 /* CustomTextField.swift in Sources */,
+				2409FE80254F0C2F0082C839 /* Countdown.swift in Sources */,
 				24FFEF67254C515D00257893 /* NavigationBar.swift in Sources */,
 				240A89A7254D74850094EE7B /* CustomHeader.swift in Sources */,
+				2409FE81254F0C2F0082C839 /* Stopwatch.swift in Sources */,
 				2E967B15085D2B9449C858F0A41BA78F /* CustomView.swift in Sources */,
 				240A8995254D73210094EE7B /* CollectionArrayDataSource.swift in Sources */,
 				3837A948B2808C8779E726535205CF08 /* InfoNotification.swift in Sources */,

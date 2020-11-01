@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2409FE72254F08ED0082C839 /* bulletTrain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2409FE6F254F08ED0082C839 /* bulletTrain.mp4 */; };
 		2409FE73254F08ED0082C839 /* bulletTrain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2409FE71254F08ED0082C839 /* bulletTrain.png */; };
+		2409FE79254F0B8D0082C839 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2409FE78254F0B8D0082C839 /* CountdownViewController.swift */; };
 		240A89B1254D77460094EE7B /* RoutineDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89B0254D77460094EE7B /* RoutineDTO.swift */; };
 		240A89B6254D77750094EE7B /* ExerciseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89B5254D77750094EE7B /* ExerciseDTO.swift */; };
 		240A89BE254D79AD0094EE7B /* RoutineContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A89BD254D79AD0094EE7B /* RoutineContentCell.swift */; };
@@ -138,6 +139,7 @@
 		1B5B9C6388CDE4CE733CA37F /* Pods-FitnessAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2409FE6F254F08ED0082C839 /* bulletTrain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bulletTrain.mp4; sourceTree = "<group>"; };
 		2409FE71254F08ED0082C839 /* bulletTrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bulletTrain.png; sourceTree = "<group>"; };
+		2409FE78254F0B8D0082C839 /* CountdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
 		240A89B0254D77460094EE7B /* RoutineDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineDTO.swift; sourceTree = "<group>"; };
 		240A89B5254D77750094EE7B /* ExerciseDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseDTO.swift; sourceTree = "<group>"; };
 		240A89BD254D79AD0094EE7B /* RoutineContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineContentCell.swift; sourceTree = "<group>"; };
@@ -294,6 +296,14 @@
 			path = Thumbnails;
 			sourceTree = "<group>";
 		};
+		2409FE77254F0B4D0082C839 /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				2409FE78254F0B8D0082C839 /* CountdownViewController.swift */,
+			);
+			path = Countdown;
+			sourceTree = "<group>";
+		};
 		240A89BA254D79220094EE7B /* HomeChildVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +377,7 @@
 		241A0F95254DEB2200095693 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				2409FE77254F0B4D0082C839 /* Countdown */,
 				241A0F96254DEB3B00095693 /* DetailVC */,
 			);
 			path = Detail;
@@ -1159,6 +1170,7 @@
 				24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */,
 				24FFEF97254C6EC200257893 /* DataEntryGenerator.swift in Sources */,
 				241A0FA3254DF07200095693 /* RoutineDetailView.swift in Sources */,
+				2409FE79254F0B8D0082C839 /* CountdownViewController.swift in Sources */,
 				24534412254B7B3900726E8F /* ProfileCreationViewController.swift in Sources */,
 				24A0773C2548DC7400EE111F /* MovingToNextVC.swift in Sources */,
 				24379A8E25458A7C008B1E26 /* SceneDelegate.swift in Sources */,
