@@ -82,6 +82,12 @@ extension MainCoordinator: StartingRoutine {
     }
     
     func completeRoutine() {
-        
+        let rootVC = RoutineCompleteViewController()
+        rootVC.modalPresentationStyle = .fullScreen
+        rootVC.bgImageName = "CountBackground"
+        rootVC.coordinator = self
+        navigationController.present(rootVC, animated: false, completion: {
+            // TODO
+        })
     }
 }

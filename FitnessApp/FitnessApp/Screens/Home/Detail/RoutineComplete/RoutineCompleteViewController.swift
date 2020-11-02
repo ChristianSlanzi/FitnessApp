@@ -9,6 +9,8 @@ import CS_Common_UI
 
 class RoutineCompleteViewController: BaseViewController {
     
+    var coordinator: StartingRoutine?
+    
     private let danceImageView: UIImageView = {
         var imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -32,11 +34,26 @@ class RoutineCompleteViewController: BaseViewController {
         return view
     }()
     
+    private let goHomeButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = UIColor(hexFromString: "#9013fe")
+        button.layer.cornerRadius = 30.0 // height/2
+        button.setTitle("Go to home", for: .normal)
+        button.addTarget(self, action: #selector(didTapGoHomeButton), for: .touchUpInside)
+        //button.setUpButton()
+        //button.configureColors(for: theme)
+        return button
+    }()
+    
     override func setupViews() {
         super.setupViews()
+        
+        //TODO use extension addSubviews
         view.addSubview(danceImageView)
         view.addSubview(messageView)
         view.addSubview(shareOptionsView)
+        view.addSubview(goHomeButton)
         
     }
     
@@ -64,6 +81,17 @@ class RoutineCompleteViewController: BaseViewController {
             shareOptionsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0)
         ])
         
+        NSLayoutConstraint.activate([
+            goHomeButton.bottomAnchor.constraint(equalTo: view.safeBottomAnchor, constant: -20),
+            goHomeButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            goHomeButton.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.9),
+            goHomeButton.heightAnchor.constraint(equalToConstant: 60)
+        ])
+    }
+    
+    @objc func didTapGoHomeButton() {
+        //TODO define a proper action to go home
+        coordinator?.stopRoutine()
     }
     
 }
