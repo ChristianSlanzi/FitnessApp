@@ -9,7 +9,10 @@
 import CS_Common_UI
 
 class RoutinePlayInfoView: CustomView {
-        
+
+    var routine: RoutineDTO
+    var coordinator: StartingRoutine?
+
     private let caloriesLabel: UILabel = {
        let titleLabel = UILabel()
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -44,14 +47,33 @@ class RoutinePlayInfoView: CustomView {
         if timeInterval <= 0 {
             //Send alert to indicate "time's up!"
             //strongSelf.dismiss(animated: false)
-            //strongSelf.coordinator?.startRoutinePlay()
+            strongSelf.routine.currentExercise += 1
+            strongSelf.coordinator?.stopRoutine()
+            
+            //TODO: who is the logic owner? not the view.. it should be the view model.. the interactor .. the manager...
+            if strongSelf.routine.currentExercise >= strongSelf.routine.exercises.count {
+                strongSelf.coordinator?.completeRoutine()
+            } else {
+                strongSelf.coordinator?.startRoutinePlay(with: strongSelf.routine)
+            }
+                
             return
         }
         
         strongSelf.countdownLabel.text = strongSelf.timeString(from: timeInterval)
         
     })
-
+    
+    internal init( routine: RoutineDTO, coordinator: StartingRoutine? = nil) {
+        self.coordinator = coordinator
+        self.routine = routine
+        super.init()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func setupViews() {
         super.setupViews()
         

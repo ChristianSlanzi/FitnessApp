@@ -20,8 +20,8 @@ class RoutinePlayViewController: BaseViewController {
         return button
     }()
     
-    private let routinePlayInfoView: RoutinePlayInfoView = {
-        var view = RoutinePlayInfoView()
+    private lazy var routinePlayInfoView: RoutinePlayInfoView = {
+        var view = RoutinePlayInfoView(routine: routine, coordinator: coordinator)
     //      view.backgroundColor = .yellow
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -59,6 +59,10 @@ class RoutinePlayViewController: BaseViewController {
         super.viewDidAppear(animated)
         
         startCountdown()
+        
+        //TODO: handle routine cicle: routine started, exercise completed, next exercise, all exercises completed, routine completed
+        // routine paused, routine continue, routine restart.
+        
     }
     
     override func setupViews() {

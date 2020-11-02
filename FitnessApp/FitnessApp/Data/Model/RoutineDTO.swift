@@ -20,6 +20,7 @@ struct RoutineDTO {
     var badgeText: String
     var previewName: String
     var exercises: [ExerciseDTO] //TODO: or dictionary day:workout?
+    var currentExercise: Int
     
     var session: SessionInfos
     
@@ -30,5 +31,6 @@ struct RoutineDTO {
         self.previewName = imageName + "Preview"
         self.exercises = exercises
         self.session = session
+        self.currentExercise = 0
     }
 }

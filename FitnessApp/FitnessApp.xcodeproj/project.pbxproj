@@ -86,6 +86,9 @@
 		24A077202548D9BF00EE111F /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0771F2548D9BF00EE111F /* LoadingViewController.swift */; };
 		24A0773C2548DC7400EE111F /* MovingToNextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A0773B2548DC7400EE111F /* MovingToNextVC.swift */; };
 		24A077452548DDF100EE111F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24A077442548DDF100EE111F /* Media.xcassets */; };
+		24A70F3425506398008C6AB2 /* RoutineCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A70F3325506398008C6AB2 /* RoutineCompleteViewController.swift */; };
+		24A70F3E255063E5008C6AB2 /* ShareOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A70F3C255063E5008C6AB2 /* ShareOptionsView.swift */; };
+		24A70F3F255063E5008C6AB2 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A70F3D255063E5008C6AB2 /* MessageView.swift */; };
 		24AD864325475D1F00C57EDC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 24AD864225475D1F00C57EDC /* README.md */; };
 		24FFEF3B254C26F400257893 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF3A254C26F400257893 /* MainCoordinator.swift */; };
 		24FFEF40254C27D800257893 /* ExploreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF3F254C27D800257893 /* ExploreCoordinator.swift */; };
@@ -225,6 +228,9 @@
 		24A0771F2548D9BF00EE111F /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		24A0773B2548DC7400EE111F /* MovingToNextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingToNextVC.swift; sourceTree = "<group>"; };
 		24A077442548DDF100EE111F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		24A70F3325506398008C6AB2 /* RoutineCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineCompleteViewController.swift; sourceTree = "<group>"; };
+		24A70F3C255063E5008C6AB2 /* ShareOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareOptionsView.swift; sourceTree = "<group>"; };
+		24A70F3D255063E5008C6AB2 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		24AD864225475D1F00C57EDC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		24FFEF3A254C26F400257893 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		24FFEF3F254C27D800257893 /* ExploreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCoordinator.swift; sourceTree = "<group>"; };
@@ -401,6 +407,7 @@
 		241A0F95254DEB2200095693 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				24A70F3225506377008C6AB2 /* RoutineComplete */,
 				2409FE8A254F0FB70082C839 /* RoutinePlay */,
 				2409FE77254F0B4D0082C839 /* Countdown */,
 				241A0F96254DEB3B00095693 /* DetailVC */,
@@ -858,6 +865,24 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		24A70F3225506377008C6AB2 /* RoutineComplete */ = {
+			isa = PBXGroup;
+			children = (
+				24A70F3B255063B8008C6AB2 /* Views */,
+				24A70F3325506398008C6AB2 /* RoutineCompleteViewController.swift */,
+			);
+			path = RoutineComplete;
+			sourceTree = "<group>";
+		};
+		24A70F3B255063B8008C6AB2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24A70F3D255063E5008C6AB2 /* MessageView.swift */,
+				24A70F3C255063E5008C6AB2 /* ShareOptionsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		24FFEF58254C4DFE00257893 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -1153,6 +1178,7 @@
 				246C82422549CADC009AD69F /* CreatingAccount.swift in Sources */,
 				241A0FB0254DF0ED00095693 /* RoutineExerciseTable.swift in Sources */,
 				2453441D254B7CB700726E8F /* InputContentView.swift in Sources */,
+				24A70F3E255063E5008C6AB2 /* ShareOptionsView.swift in Sources */,
 				24FFEF3B254C26F400257893 /* MainCoordinator.swift in Sources */,
 				241A0FAF254DF0ED00095693 /* RoutineInfoContent.swift in Sources */,
 				24534407254B789900726E8F /* UserAccountDTO.swift in Sources */,
@@ -1184,6 +1210,7 @@
 				241A0F76254DD54400095693 /* MyGoalViewController.swift in Sources */,
 				241A0FAC254DF0ED00095693 /* RoutineInfoView.swift in Sources */,
 				240A89BE254D79AD0094EE7B /* RoutineContentCell.swift in Sources */,
+				24A70F3F255063E5008C6AB2 /* MessageView.swift in Sources */,
 				240A89C6254D7AC10094EE7B /* ExerciseCell.swift in Sources */,
 				240A89D6254D9EA50094EE7B /* ExploreViewController.swift in Sources */,
 				245343EF254B723E00726E8F /* MappableProtocol.swift in Sources */,
@@ -1195,6 +1222,7 @@
 				245343C8254B6CE200726E8F /* SignupViewController.swift in Sources */,
 				245343ED254B723E00726E8F /* BaseRepository.swift in Sources */,
 				240A89B1254D77460094EE7B /* RoutineDTO.swift in Sources */,
+				24A70F3425506398008C6AB2 /* RoutineCompleteViewController.swift in Sources */,
 				24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */,
 				24FFEF97254C6EC200257893 /* DataEntryGenerator.swift in Sources */,
 				241A0FA3254DF07200095693 /* RoutineDetailView.swift in Sources */,
