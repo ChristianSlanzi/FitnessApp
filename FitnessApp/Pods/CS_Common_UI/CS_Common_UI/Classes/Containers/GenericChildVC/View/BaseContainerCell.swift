@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CS_Common_Utils
 
 struct BaseContainerCellModel {
     var backgroundColor: UIColor = .darkGray
