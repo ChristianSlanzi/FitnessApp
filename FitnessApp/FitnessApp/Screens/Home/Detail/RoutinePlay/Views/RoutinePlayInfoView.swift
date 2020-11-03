@@ -41,7 +41,11 @@ class RoutinePlayInfoView: CustomView {
         return titleLabel
     }()
     
-    private lazy var countdown = Countdown(startTime: 30, timeUpdated: { [weak self] timeInterval in
+    private var currentExercise: ExerciseDTO {
+        return routine.exercises[routine.currentExercise]
+    }
+    
+    private lazy var countdown = Countdown(startTime: currentExercise.duration, timeUpdated: { [weak self] timeInterval in
         guard let strongSelf = self else { return }
         
         if timeInterval <= 0 {
@@ -60,7 +64,7 @@ class RoutinePlayInfoView: CustomView {
             return
         }
         
-        strongSelf.countdownLabel.text = strongSelf.timeString(from: timeInterval)
+        strongSelf.countdownLabel.text = timeInterval.toString()//strongSelf.timeString(from: timeInterval)
         
     })
     
@@ -83,9 +87,16 @@ class RoutinePlayInfoView: CustomView {
         addSubview(nextExerciseLabel)
         
         //TODO: inject routine/exercise struct with the necessary data
-        caloriesLabel.text = "Calories burned 323"
-        countdownLabel.text = "00:30"
-        nextExerciseLabel.text = "Next: Walking Lunges"
+        let totExercises = routine.exercises.count
+        let currentExercise = routine.exercises[routine.currentExercise]
+        let nextExercise = (routine.currentExercise == (totExercises - 1)) ? nil : routine.exercises[routine.currentExercise + 1]
+        let totCalories = currentExercise.totCalories
+        let duration = currentExercise.duration
+        let next = nextExercise?.title
+
+        caloriesLabel.text = "Calories burned \(totCalories)" //"Calories burned 323"
+        countdownLabel.text = duration.toString()  //timeString(from: duration)//"00:30"
+        nextExerciseLabel.text = next != nil  ? "Next: \(next!)" : ""//"Next: Walking Lunges"
 
     }
     override func setupConstraints() {
@@ -109,9 +120,21 @@ class RoutinePlayInfoView: CustomView {
     public func toggleCountdown() {
         countdown.toggle()
     }
+    
+    /*
     private func timeString(from timeInterval: TimeInterval) -> String {
         let seconds = Int(timeInterval.truncatingRemainder(dividingBy: 60))
         let minutes = Int(timeInterval.truncatingRemainder(dividingBy: 60 * 60) / 60)
+        //let hours = Int(timeInterval / 3600)
+        //return String(format: "%.2d:%.2d:%.2d", hours, minutes, seconds)
+        return String(format: "%.2d:%.2d", minutes, seconds)
+    }*/
+}
+
+public extension TimeInterval {
+    func toString() -> String {
+        let seconds = Int(self.truncatingRemainder(dividingBy: 60))
+        let minutes = Int(self.truncatingRemainder(dividingBy: 60 * 60) / 60)
         //let hours = Int(timeInterval / 3600)
         //return String(format: "%.2d:%.2d:%.2d", hours, minutes, seconds)
         return String(format: "%.2d:%.2d", minutes, seconds)

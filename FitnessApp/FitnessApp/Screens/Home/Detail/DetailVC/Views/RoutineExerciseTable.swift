@@ -68,8 +68,8 @@ public class RoutineExerciseCell: UITableViewCell {
             if let item = item {
                 littleImage.image = UIImage(named: item.imageName)
                 titleLabel.text = item.title
-                setsLabel.text = "3 sets"//item.sets
-                timeLabel.text = "00:00:60"//item.time
+                setsLabel.text = "\(item.series)"
+                timeLabel.text = item.duration.toString()//"00:00:60"//item.time
             }
             
         }

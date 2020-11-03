@@ -154,43 +154,51 @@ extension AppDataManager {
     
     private func initialiseExercises() {
         //TODO: this should be workouts
-        let exercises: [ExerciseDTO] = [ExerciseDTO("Workout1", "NEW WORKOUT FOR YOU", "12 new"),
-        ExerciseDTO("Workout2", "NEW WORKOUT FOR YOU", "12 new"),
-        ExerciseDTO("Workout3", "NEW WORKOUT FOR YOU", "12 new"),
-        ExerciseDTO("Workout4", "NEW WORKOUT FOR YOU", "12 new"),
-        ExerciseDTO("Workout5", "NEW WORKOUT FOR YOU", "12 new")]
+        let exercises: [ExerciseDTO] = [
+            ExerciseDTO(title: "NEW WORKOUT FOR YOU", description: "12 new", series: 3, duration: 60, totCalories: 300, imageName: "Workout1"),
+            ExerciseDTO(title: "NEW WORKOUT FOR YOU", description: "12 new", series: 3, duration: 60, totCalories: 300, imageName: "Workout2"),
+            ExerciseDTO(title: "NEW WORKOUT FOR YOU", description: "12 new", series: 3, duration: 60, totCalories: 300, imageName: "Workout3"),
+            ExerciseDTO(title: "NEW WORKOUT FOR YOU", description: "12 new", series: 3, duration: 60, totCalories: 300, imageName: "Workout4"),
+            ExerciseDTO(title: "NEW WORKOUT FOR YOU", description: "12 new", series: 3, duration: 60, totCalories: 300, imageName: "Workout5")]
         
         self.exercises = exercises
     }
     
     private func initialiseRoutines() {
-        let items1 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
-        ExerciseDTO("RoutinePreview1", "WALKING LUNGES", "....."),
-        ExerciseDTO("RoutinePreview1", "STRAIGH MIX LUNGES", ".....")]
+        let items1 = [
+            ExerciseDTO(title: "HEATING WITH STAIRS", description: ".....", series: 3, duration: 30, totCalories: 300, imageName: "RoutinePreview1"),
+            ExerciseDTO(title: "WALKING LUNGES", description: ".....", series: 3, duration: 30, totCalories: 300, imageName: "RoutinePreview2"),
+            ExerciseDTO(title: "STRAIGH MIX LUNGES", description: ".....", series: 3, duration: 30, totCalories: 300, imageName: "RoutinePreview3")]
         
-        let items2 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
-        ExerciseDTO("RoutinePreview1", "LARRY SCOTT", "....."),
-        ExerciseDTO("RoutinePreview1", "STRAIGH MIX LUNGES", ".....")]
-    
-        let items3 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
-        ExerciseDTO("RoutinePreview1", "BREAST PRESS", "....."),
-        ExerciseDTO("RoutinePreview1", "STRAIGH MIX LUNGES", ".....")]
+        let items2 = [
+            ExerciseDTO(title: "HEATING WITH STAIRS", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview1"),
+            ExerciseDTO(title: "LARRY SCOTT", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview2"),
+            ExerciseDTO(title: "STRAIGH MIX LUNGES", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview3")]
         
-        let items4 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
-        ExerciseDTO("RoutinePreview1", "SHOULDER PRESS", "....."),
-        ExerciseDTO("RoutinePreview1", "STRAIGH MIX LUNGES", ".....")]
+        let items3 = [
+            ExerciseDTO(title: "HEATING WITH STAIRS", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview1"),
+            ExerciseDTO(title: "BREAST PRESS", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview2"),
+            ExerciseDTO(title: "STRAIGH MIX LUNGES", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview3")]
         
-        let items5 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
-        ExerciseDTO("RoutinePreview1", "BACK PULLS", "....."),
-        ExerciseDTO("RoutinePreview1", "STRAIGH MIX LUNGES", ".....")]
+        let items4 = [
+            ExerciseDTO(title: "HEATING WITH STAIRS", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview1"),
+            ExerciseDTO(title: "SHOULDER PRESS", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview2"),
+            ExerciseDTO(title: "STRAIGH MIX LUNGES", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview3")]
         
-        let items6 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
-        ExerciseDTO("RoutinePreview1", "SIX PACKS PRESS", "....."),
-        ExerciseDTO("RoutinePreview1", "LATERAL", ".....")]
+        let items5 = [
+            ExerciseDTO(title: "HEATING WITH STAIRS", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview1"),
+            ExerciseDTO(title: "BACK PULLS", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview2"),
+            ExerciseDTO(title: "STRAIGH MIX LUNGES", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview3")]
         
-        let items7 = [ExerciseDTO("RoutinePreview1", "HEATING WITH STAIRS", "....."),
-        ExerciseDTO("RoutinePreview1", "TRICEPS PULLS", "....."),
-        ExerciseDTO("RoutinePreview1", "STRAIGH MIX LUNGES", ".....")]
+        let items6 = [
+            ExerciseDTO(title: "HEATING WITH STAIRS", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview1"),
+            ExerciseDTO(title: "SIX PACKS PRESS", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview2"),
+            ExerciseDTO(title: "STRAIGH MIX LUNGES", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview3")]
+        
+        let items7 = [
+            ExerciseDTO(title: "HEATING WITH STAIRS", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview1"),
+            ExerciseDTO(title: "TRICEPS PULLS", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview2"),
+            ExerciseDTO(title: "STRAIGH MIX LUNGES", description: ".....", series: 3, duration: 60, totCalories: 300, imageName: "RoutinePreview3")]
         
         let session1Infos = SessionInfos(sessionTitle: "DAY 1",
                                          description: "The objective of this set is to form your legs",

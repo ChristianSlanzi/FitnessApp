@@ -9,13 +9,24 @@
 import Foundation
 
 struct ExerciseDTO {
-    var imageName: String
-    var title: String
-    var description: String
+    let title: String
+    let description: String
+    let series: Int
+    let duration: Double //seconds
+    let totCalories: Int
+    let imageName: String
     
-    init(_ imageName: String, _ title: String, _ description: String) {
-        self.imageName = imageName
+    init(title: String,
+         description: String,
+         series: Int,
+         duration: Double,
+         totCalories: Int,
+         imageName: String) {
         self.title = title
         self.description = description
+        self.series = series
+        self.duration = duration
+        self.totCalories = totCalories
+        self.imageName = imageName
     }
 }
