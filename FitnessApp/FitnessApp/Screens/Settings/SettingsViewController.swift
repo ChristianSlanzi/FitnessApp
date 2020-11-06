@@ -109,5 +109,4 @@ class SettingsViewController: BaseViewController {
             settingsContentView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
-    
 }

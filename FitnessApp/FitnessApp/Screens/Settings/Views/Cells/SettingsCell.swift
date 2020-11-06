@@ -90,5 +90,4 @@ public class SettingsCell: UITableViewCell {
             valueLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 0)
         ])
     }
-
 }
