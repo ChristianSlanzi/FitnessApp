@@ -10,6 +10,7 @@ import CS_CoreModule
 
 class MainTabBarCoordinatedController: UITabBarController, UITabBarControllerDelegate {
     
+    let theme = SettingsService.shared.appTheme
     var coordinators: [Coordinator] = []
     
     public convenience init(coordinators: [Coordinator]) {
@@ -20,11 +21,19 @@ class MainTabBarCoordinatedController: UITabBarController, UITabBarControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let theme = SettingsService.shared.appTheme
+        
+        startCoordinators()
+        
+        self.tabBar.updateColors(for: theme)
+    }
+    
+    private func startCoordinators() {
+        
         
         for coordinator in coordinators {
             coordinator.start()
@@ -34,7 +43,7 @@ class MainTabBarCoordinatedController: UITabBarController, UITabBarControllerDel
         viewControllers = self.coordinators.map({ $0.navigationController
         })
         
-        self.tabBar.updateColors(for: theme)
+        
     }
     
     //TODO: find better solution

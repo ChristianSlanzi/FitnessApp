@@ -12,6 +12,7 @@ class MyGoalCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
     
     var navigationController: UINavigationController
+    var started = false
     
     init(navigationController: UINavigationController, isNavigationBarHidden: Bool = true) {
         self.navigationController = navigationController
@@ -19,11 +20,15 @@ class MyGoalCoordinator: NSObject, Coordinator {
     }
     
     func start() {
+        if started { return }
+        
         let controller =  MyGoalViewController()
         controller.bgImageName = "ScreenBackground"
         
         controller.tabBarItem = UITabBarItem(title: "screen_title_MyGoal".localized, image: UIImage(named: "Devices"), tag: 0)
         //navigationController.delegate = self
         navigationController.pushViewController(controller, animated: false)
+        
+        started = true
     }
 }

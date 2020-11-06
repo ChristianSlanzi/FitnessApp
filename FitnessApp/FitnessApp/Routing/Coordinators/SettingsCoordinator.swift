@@ -12,6 +12,7 @@ class SettingsCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
     
     var navigationController: UINavigationController
+    var started = false
     
     init(navigationController: UINavigationController, isNavigationBarHidden: Bool = true) {
         self.navigationController = navigationController
@@ -19,6 +20,8 @@ class SettingsCoordinator: NSObject, Coordinator {
     }
     
     func start() {
+        if started { return }
+        
         let viewModel = SettingsViewModel()
         let controller =  SettingsViewController(settingsViewModel: viewModel)
         controller.bgImageName = "ScreenBackground"
@@ -26,5 +29,7 @@ class SettingsCoordinator: NSObject, Coordinator {
         controller.tabBarItem = UITabBarItem(title: "screen_title_Settings".localized, image: UIImage(named: "Settings"), tag: 0)
         //navigationController.delegate = self
         navigationController.pushViewController(controller, animated: false)
+        
+        started = true
     }
 }

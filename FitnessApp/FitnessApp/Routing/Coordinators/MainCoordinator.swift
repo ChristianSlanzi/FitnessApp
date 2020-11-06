@@ -6,12 +6,14 @@
 //
 
 import CS_Common_Utils
+import CS_Common_UI
 import CS_CoreModule
 
 class MainCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
     
     var navigationController: UINavigationController
+    var started = false
     
     init(navigationController: UINavigationController, isNavigationBarHidden: Bool = true) {
         self.navigationController = navigationController
@@ -19,12 +21,30 @@ class MainCoordinator: NSObject, Coordinator {
     }
     
     func start() {
-        let controller = HomeViewController(dataManager: AppDataManager.shared) //TODO: inject the datamanager?
+        if started { return }
+        
+        let navbarModel = NavigationBarModelView(titleText: "MY\nGOAL",
+                                                 subtitleText: "February",
+                                                 imageName: "Profile")
+        
+        let contentModel = ContainerControllerModel(navigationItemTitle: "MY GOAL",
+                                                                   collectionRowHeight: 219,
+                                                                   tableRowHeight: 136,
+                                                                   sectionTitles: ["ROUTINE", "SUGGESTED"],
+                                                                   sectionTitleHexColor: "#626363")
+        
+        let viewModel = HomeViewModel(dataManager: AppDataManager.shared,
+                                      navigationBarViewModel: navbarModel,
+                                      contentViewModel: contentModel)
+        
+        let controller = HomeViewController(viewModel: viewModel) //TODO: inject the datamanager?
         controller.bgImageName = "ScreenBackground"
+        controller.tabBarItem = UITabBarItem(title: "screen_title_Home".localized, image: UIImage(named: "Home"), tag: 0)
         controller.coordinator = self
         
-        controller.tabBarItem = UITabBarItem(title: "screen_title_Home".localized, image: UIImage(named: "Home"), tag: 0)
         navigationController.pushViewController(controller, animated: false)
+        
+        started = true
     }
 }
 
