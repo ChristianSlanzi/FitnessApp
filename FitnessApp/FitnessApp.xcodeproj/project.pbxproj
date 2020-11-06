@@ -43,6 +43,8 @@
 		24379A9825458A7F008B1E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24379A9625458A7F008B1E26 /* LaunchScreen.storyboard */; };
 		24379AA325458A7F008B1E26 /* FitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379AA225458A7F008B1E26 /* FitnessAppTests.swift */; };
 		24379AAE25458A7F008B1E26 /* FitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379AAD25458A7F008B1E26 /* FitnessAppUITests.swift */; };
+		24414F7C2551E46300669BEB /* RoutineExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24414F7B2551E46300669BEB /* RoutineExerciseCell.swift */; };
+		24414F842551E7D300669BEB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24414F832551E7D300669BEB /* HomeViewModel.swift */; };
 		244E9428254B27BB008AE146 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9427254B27BB008AE146 /* LoginViewController.swift */; };
 		244E9431254B289F008AE146 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9430254B289F008AE146 /* Alert.swift */; };
 		244E943A254B2912008AE146 /* CoreModuleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9439254B2912008AE146 /* CoreModuleExtension.swift */; };
@@ -185,6 +187,8 @@
 		24379AA925458A7F008B1E26 /* FitnessAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24379AAD25458A7F008B1E26 /* FitnessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessAppUITests.swift; sourceTree = "<group>"; };
 		24379AAF25458A7F008B1E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24414F7B2551E46300669BEB /* RoutineExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineExerciseCell.swift; sourceTree = "<group>"; };
+		24414F832551E7D300669BEB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		244E9427254B27BB008AE146 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		244E9430254B289F008AE146 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		244E9439254B2912008AE146 /* CoreModuleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModuleExtension.swift; sourceTree = "<group>"; };
@@ -427,8 +431,8 @@
 		241A0FA1254DF05700095693 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				24414F792551E40500669BEB /* RoutineExerciseTable */,
 				241A0FA8254DF0ED00095693 /* RoutineDifficultyView.swift */,
-				241A0FAB254DF0ED00095693 /* RoutineExerciseTable.swift */,
 				241A0FAA254DF0ED00095693 /* RoutineInfoContent.swift */,
 				241A0FA7254DF0ED00095693 /* RoutineInfoView.swift */,
 				241A0FA9254DF0ED00095693 /* VideoPreviewButton.swift */,
@@ -498,6 +502,23 @@
 				24379AAF25458A7F008B1E26 /* Info.plist */,
 			);
 			path = FitnessAppUITests;
+			sourceTree = "<group>";
+		};
+		24414F792551E40500669BEB /* RoutineExerciseTable */ = {
+			isa = PBXGroup;
+			children = (
+				24414F7A2551E43300669BEB /* Cell */,
+				241A0FAB254DF0ED00095693 /* RoutineExerciseTable.swift */,
+			);
+			path = RoutineExerciseTable;
+			sourceTree = "<group>";
+		};
+		24414F7A2551E43300669BEB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				24414F7B2551E46300669BEB /* RoutineExerciseCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		244E9426254B2799008AE146 /* Login */ = {
@@ -889,6 +910,7 @@
 				241A0F95254DEB2200095693 /* Detail */,
 				240A89BA254D79220094EE7B /* HomeChildVC */,
 				24FFEF59254C4E6900257893 /* HomeViewController.swift */,
+				24414F832551E7D300669BEB /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1179,6 +1201,7 @@
 				241A0FB0254DF0ED00095693 /* RoutineExerciseTable.swift in Sources */,
 				2453441D254B7CB700726E8F /* InputContentView.swift in Sources */,
 				24A70F3E255063E5008C6AB2 /* ShareOptionsView.swift in Sources */,
+				24414F842551E7D300669BEB /* HomeViewModel.swift in Sources */,
 				24FFEF3B254C26F400257893 /* MainCoordinator.swift in Sources */,
 				241A0FAF254DF0ED00095693 /* RoutineInfoContent.swift in Sources */,
 				24534407254B789900726E8F /* UserAccountDTO.swift in Sources */,
@@ -1208,6 +1231,7 @@
 				241A0F8F254DE8B400095693 /* SettingsCell.swift in Sources */,
 				245343F5254B723E00726E8F /* UserRepository.swift in Sources */,
 				241A0F76254DD54400095693 /* MyGoalViewController.swift in Sources */,
+				24414F7C2551E46300669BEB /* RoutineExerciseCell.swift in Sources */,
 				241A0FAC254DF0ED00095693 /* RoutineInfoView.swift in Sources */,
 				240A89BE254D79AD0094EE7B /* RoutineContentCell.swift in Sources */,
 				24A70F3F255063E5008C6AB2 /* MessageView.swift in Sources */,

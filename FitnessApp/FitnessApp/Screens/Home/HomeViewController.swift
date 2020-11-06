@@ -10,55 +10,39 @@ import CS_Common_UI
 class HomeViewController: BaseViewController {
     
     var coordinator: ShowingRoutineDetail?
-    var dataManager: AppDataManager
+    var viewModel: HomeViewModel
     
-    private let navigationBar: NavigationBar = {
-        
-        //TODO!!!! ModelView must be injected!!!
-        var modelView = NavigationBarModelView(titleText: "MY\nGOAL", subtitleText: "February", imageName: "Profile")
-        
-        let view = NavigationBar(modelView: modelView)
+    private typealias HomeContentContainer = ContainerController<RoutineDTO, RoutineContentCell, ExerciseDTO, ExerciseCell>
+    
+    private lazy var navigationBar: NavigationBar = {
+        let view = NavigationBar(modelView: viewModel.getNavigationBarViewModel())
         view.translatesAutoresizingMaskIntoConstraints = false
         //view.backgroundColor = .systemBlue
         return view
     }()
     
-    /*
-    lazy var barChart: CustomCardView = {
-        let view = CustomCardView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        //view.backgroundColor = .systemBlue
-        return view
-    }()
-    */
-    private lazy var barChart: BasicBarChart = {
+    private lazy var barChart: BasicBarChart = { //TODO: create a BarChartViewModel
         let view = BasicBarChart()
         view.backgroundColor = .white
         view.layer.cornerRadius = 5
-        let dataEntries = dataManager.getDailyEntries()
-        view.updateDataEntries(dataEntries: dataEntries, animated: false)
+        view.updateDataEntries(dataEntries: viewModel.getDailyEntries(),
+                               animated: false)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    lazy var contentVC: ContainerController<RoutineDTO, RoutineContentCell, ExerciseDTO, ExerciseCell> = {
-       let containerControllerModel = ContainerControllerModel(navigationItemTitle: "MY GOAL",
-                                                               collectionRowHeight: 219,
-                                                               tableRowHeight: 136,
-                                                               sectionTitles: ["ROUTINE", "SUGGESTED"],
-                                                               sectionTitleHexColor: "#626363")
-        
-        let rootVC = ContainerController<RoutineDTO, RoutineContentCell, ExerciseDTO, ExerciseCell>(model: containerControllerModel,
-                                                                                              collectionDatasource: dataManager.getRoutines(),
-                                                                                              datasource: dataManager.getExercises(),
-                                                                                              coordinator: self.coordinator)
+    private lazy var contentVC: HomeContentContainer = {
+        let rootVC = HomeContentContainer(model: viewModel.getHomeContentViewModel(), //TODO: move all inside view model
+                                          collectionDatasource: viewModel.getRoutines(), // should viewModel contain even the coordinator?
+                                          datasource: viewModel.getExercises(),
+                                          coordinator: self.coordinator)
         rootVC.view.translatesAutoresizingMaskIntoConstraints = false
         return rootVC
     }()
     
     // MARK: Init & Setup
-    init(dataManager: AppDataManager) {
-        self.dataManager = dataManager
+    init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
         super.init()
     }
     
@@ -69,12 +53,8 @@ class HomeViewController: BaseViewController {
     override func setupViews() {
         super.setupViews()
         
-        view.addSubview(navigationBar)
-        view.addSubview(barChart)
-        //barChart.updateDataEntries(dataEntries: dataManager.getDailyEntries(), animated: false)
-
+        view.addSubviews(navigationBar, barChart)
         add(childController: contentVC)
-        
     }
     
     override func setupConstraints() {
