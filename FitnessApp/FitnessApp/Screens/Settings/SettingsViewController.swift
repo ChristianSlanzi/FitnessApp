@@ -11,15 +11,10 @@ class SettingsViewController: BaseViewController {
     
     //TODO: refactor in a navbarbaseviewcontroller that has a navigationbar already
     lazy var navigationBar: NavigationBar = {
-        
-        //TODO!!!! ModelView must be injected!!!
-        var modelView = NavigationBarModelView(titleText: "SETTINGS", subtitleText: "", imageName: nil)
-        
-        let view = NavigationBar(modelView: modelView)
+        let view = NavigationBar(modelView: settingsViewModel!.getNavigationBarViewModel())
         view.translatesAutoresizingMaskIntoConstraints = false
         //view.backgroundColor = .systemBlue
         return view
-        
     }()
     
     lazy var pictureInfoView: PictureInfoView = {

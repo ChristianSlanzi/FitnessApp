@@ -7,6 +7,7 @@
 
 import UIKit
 import CS_CoreModule
+import CS_Common_UI
 
 class ExploreCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
@@ -22,7 +23,12 @@ class ExploreCoordinator: NSObject, Coordinator {
     func start() {
         if started { return }
         
-        let controller =  ExploreViewController()
+        let navbarModel = NavigationBarModelView(titleText: "EXPLORE", subtitleText: "", imageName: nil)
+        
+        let viewModel = ExploreViewModel(dataManager: AppDataManager.shared,
+                                      navigationBarViewModel: navbarModel)
+        
+        let controller =  ExploreViewController(viewModel: viewModel)
         controller.bgImageName = "ScreenBackground"
 
         controller.tabBarItem = UITabBarItem(title: "screen_title_Explore".localized, image: UIImage(named: "Explore"), tag: 0)

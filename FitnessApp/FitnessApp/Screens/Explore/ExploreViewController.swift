@@ -9,20 +9,25 @@ import CS_Common_UI
 
 class ExploreViewController: BaseViewController {
     
+    var viewModel: ExploreViewModel
+    
     //TODO: refactor in a navbarbaseviewcontroller that has a navigationbar already
     lazy var navigationBar: NavigationBar = {
-        
-        //TODO!!!! ModelView must be injected!!!
-        var modelView = NavigationBarModelView(titleText: "EXPLORE", subtitleText: "", imageName: nil)
-
-        let view = NavigationBar(modelView: modelView)
+        let view = NavigationBar(modelView: viewModel.getNavigationBarViewModel())
         view.translatesAutoresizingMaskIntoConstraints = false
         //view.backgroundColor = .systemBlue
         return view
-        
     }()
     
     // MARK: Init & Setup
+    init(viewModel: ExploreViewModel) {
+        self.viewModel = viewModel
+        super.init()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func setupViews() {
         super.setupViews()

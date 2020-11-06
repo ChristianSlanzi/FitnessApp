@@ -92,6 +92,8 @@
 		24A70F3E255063E5008C6AB2 /* ShareOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A70F3C255063E5008C6AB2 /* ShareOptionsView.swift */; };
 		24A70F3F255063E5008C6AB2 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A70F3D255063E5008C6AB2 /* MessageView.swift */; };
 		24AD864325475D1F00C57EDC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 24AD864225475D1F00C57EDC /* README.md */; };
+		24BD990A25557B9B00F6CE3B /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD990925557B9B00F6CE3B /* ExploreViewModel.swift */; };
+		24BD990F25557C6000F6CE3B /* MyGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD990E25557C6000F6CE3B /* MyGoalViewModel.swift */; };
 		24FFEF3B254C26F400257893 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF3A254C26F400257893 /* MainCoordinator.swift */; };
 		24FFEF40254C27D800257893 /* ExploreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF3F254C27D800257893 /* ExploreCoordinator.swift */; };
 		24FFEF45254C280D00257893 /* MyGoalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF44254C280D00257893 /* MyGoalCoordinator.swift */; };
@@ -236,6 +238,8 @@
 		24A70F3C255063E5008C6AB2 /* ShareOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareOptionsView.swift; sourceTree = "<group>"; };
 		24A70F3D255063E5008C6AB2 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		24AD864225475D1F00C57EDC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		24BD990925557B9B00F6CE3B /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		24BD990E25557C6000F6CE3B /* MyGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalViewModel.swift; sourceTree = "<group>"; };
 		24FFEF3A254C26F400257893 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		24FFEF3F254C27D800257893 /* ExploreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCoordinator.swift; sourceTree = "<group>"; };
 		24FFEF44254C280D00257893 /* MyGoalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalCoordinator.swift; sourceTree = "<group>"; };
@@ -367,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				240A89D5254D9EA50094EE7B /* ExploreViewController.swift */,
+				24BD990925557B9B00F6CE3B /* ExploreViewModel.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -375,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				241A0F75254DD54400095693 /* MyGoalViewController.swift */,
+				24BD990E25557C6000F6CE3B /* MyGoalViewModel.swift */,
 			);
 			path = MyGoal;
 			sourceTree = "<group>";
@@ -1195,6 +1201,7 @@
 				241A0FAD254DF0ED00095693 /* RoutineDifficultyView.swift in Sources */,
 				2453441C254B7CB700726E8F /* ProfileCreationWizard.swift in Sources */,
 				245343F0254B723E00726E8F /* Storable.swift in Sources */,
+				24BD990F25557C6000F6CE3B /* MyGoalViewModel.swift in Sources */,
 				241A0F8E254DE8B400095693 /* PictureInfoView.swift in Sources */,
 				245343F8254B723E00726E8F /* User.swift in Sources */,
 				246C82422549CADC009AD69F /* CreatingAccount.swift in Sources */,
@@ -1223,6 +1230,7 @@
 				2453441F254B7CB700726E8F /* HeaderView.swift in Sources */,
 				246C81F52549ADDB009AD69F /* AppDataManager.swift in Sources */,
 				24FFEF4A254C283C00257893 /* SettingsCoordinator.swift in Sources */,
+				24BD990A25557B9B00F6CE3B /* ExploreViewModel.swift in Sources */,
 				241A0F84254DD7E400095693 /* SettingsViewModel.swift in Sources */,
 				246C82112549B014009AD69F /* OnBoardingPage.swift in Sources */,
 				24FFEF4F254C297B00257893 /* MainTabBarCoordinatedController.swift in Sources */,

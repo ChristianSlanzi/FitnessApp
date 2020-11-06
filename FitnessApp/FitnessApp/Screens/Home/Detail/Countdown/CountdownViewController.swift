@@ -74,9 +74,7 @@ class CountdownViewController: BaseViewController {
     
     override func setupViews() {
         super.setupViews()
-        view.addSubview(countdownLabel)
-        view.addSubview(statusLabel)
-        
+        view.addSubviews(countdownLabel, statusLabel)        
     }
     
     override func setupConstraints() {

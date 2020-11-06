@@ -5,10 +5,13 @@
 //  Created by Christian Slanzi on 31.10.20.
 //
 
+import CS_Common_UI
+
 class SettingsViewModel {
     
     let dbManager: DataManager
     let userRepo: UserRepositoryProtocol
+    private let navigationBarViewModel: NavigationBarModelView
     
     var user: UserDTO?
     var nameText: String = "___"
@@ -17,9 +20,15 @@ class SettingsViewModel {
     var heightText: String = "___"
     var weightText: String = "___"
     
-    init(dbManager: DataManager = RealmDataManager(RealmProvider.default)) {
-         self.dbManager = dbManager
-         self.userRepo = UserRepository(dbManager: dbManager)
+    init(navigationBarViewModel: NavigationBarModelView,
+         dbManager: DataManager = RealmDataManager(RealmProvider.default)) {
+        self.dbManager = dbManager
+        self.userRepo = UserRepository(dbManager: dbManager)
+        self.navigationBarViewModel = navigationBarViewModel
+    }
+    
+    func getNavigationBarViewModel() -> NavigationBarModelView {
+        return navigationBarViewModel
     }
     
     func getData() {

@@ -7,6 +7,7 @@
 
 import UIKit
 import CS_CoreModule
+import CS_Common_UI
 
 class SettingsCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
@@ -22,7 +23,8 @@ class SettingsCoordinator: NSObject, Coordinator {
     func start() {
         if started { return }
         
-        let viewModel = SettingsViewModel()
+        let navbarModel = NavigationBarModelView(titleText: "SETTINGS", subtitleText: "", imageName: nil)
+        let viewModel = SettingsViewModel(navigationBarViewModel: navbarModel)
         let controller =  SettingsViewController(settingsViewModel: viewModel)
         controller.bgImageName = "ScreenBackground"
         
