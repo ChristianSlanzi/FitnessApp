@@ -94,6 +94,7 @@
 		24AD864325475D1F00C57EDC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 24AD864225475D1F00C57EDC /* README.md */; };
 		24BD990A25557B9B00F6CE3B /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD990925557B9B00F6CE3B /* ExploreViewModel.swift */; };
 		24BD990F25557C6000F6CE3B /* MyGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD990E25557C6000F6CE3B /* MyGoalViewModel.swift */; };
+		24BD99132555ACB200F6CE3B /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9B6528413D883439C55EB /* Pods_FitnessApp.framework */; };
 		24FFEF3B254C26F400257893 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF3A254C26F400257893 /* MainCoordinator.swift */; };
 		24FFEF40254C27D800257893 /* ExploreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF3F254C27D800257893 /* ExploreCoordinator.swift */; };
 		24FFEF45254C280D00257893 /* MyGoalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF44254C280D00257893 /* MyGoalCoordinator.swift */; };
@@ -103,7 +104,6 @@
 		24FFEF5A254C4E6900257893 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF59254C4E6900257893 /* HomeViewController.swift */; };
 		24FFEF62254C4EFF00257893 /* ShowingRoutineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF61254C4EFF00257893 /* ShowingRoutineDetail.swift */; };
 		24FFEF97254C6EC200257893 /* DataEntryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF96254C6EC200257893 /* DataEntryGenerator.swift */; };
-		6D9A2964157F530C1EB5054F /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9B6528413D883439C55EB /* Pods_FitnessApp.framework */; };
 		F2F076B9B123EB2C2BBB8D68 /* Pods_FitnessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905147CFC728A1853084E00D /* Pods_FitnessAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -261,8 +261,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D9A2964157F530C1EB5054F /* Pods_FitnessApp.framework in Frameworks */,
 				24A076FF2548D34600EE111F /* CS_CoreModule.framework in Frameworks */,
+				24BD99132555ACB200F6CE3B /* Pods_FitnessApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

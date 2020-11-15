@@ -34,7 +34,6 @@ class MainTabBarCoordinatedController: UITabBarController, UITabBarControllerDel
     
     private func startCoordinators() {
         
-        
         for coordinator in coordinators {
             coordinator.start()
             coordinator.navigationController.navigationBar.updateColors(for: theme)

@@ -28,10 +28,13 @@ class MainCoordinator: NSObject, Coordinator {
                                                  imageName: "Profile")
         
         let contentModel = ContainerControllerModel(navigationItemTitle: "MY GOAL",
-                                                                   collectionRowHeight: 219,
-                                                                   tableRowHeight: 136,
-                                                                   sectionTitles: ["ROUTINE", "SUGGESTED"],
-                                                                   sectionTitleHexColor: "#626363")
+                                                    collectionRowHeight: 219,
+                                                    tableRowHeight: 136,
+                                                    sectionTitles: ["ROUTINE", "SUGGESTED"],
+                                                    sectionTitleHexColor: "#626363",
+                                                    sectionMoreButtonTitles: ["", "See all"],
+                                                    sectionMoreButtonTitleHexColor: "#3EC7E6"
+                                                    )
         
         let viewModel = HomeViewModel(dataManager: AppDataManager.shared,
                                       navigationBarViewModel: navbarModel,

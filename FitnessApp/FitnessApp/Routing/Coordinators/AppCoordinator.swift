@@ -44,8 +44,11 @@ final class AppCoordinator: Coordinator {
         let exploreCoordinator = ExploreCoordinator(navigationController: UINavigationController())
         let myGoalCoordinator = MyGoalCoordinator(navigationController: UINavigationController())
         let settingsCoordinator = SettingsCoordinator(navigationController: UINavigationController())
+        
         let coordinators: [Coordinator] = [mainCoordinator, exploreCoordinator, myGoalCoordinator, settingsCoordinator]
+        
         let tabBarController = MainTabBarCoordinatedController(coordinators: coordinators)
+        
         window.rootViewController = tabBarController
         self.window.makeKeyAndVisible()
     }
