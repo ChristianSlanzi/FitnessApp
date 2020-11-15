@@ -16,6 +16,11 @@ target 'FitnessApp' do
     pod 'CS_LoginModule', git: 'https://github.com/christianslanzi/CS_LoginModule.git'
     pod 'Overture'
     pod 'RealmSwift', '~> 3.20.0'
+    
+    # Pods for RemoteConfig
+    pod 'Firebase/Core'
+    pod 'Firebase/RemoteConfig'
+    pod 'Firebase/Messaging'
       
 
   target 'FitnessAppTests' do

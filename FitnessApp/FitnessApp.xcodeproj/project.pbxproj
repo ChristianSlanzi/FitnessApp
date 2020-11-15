@@ -477,6 +477,7 @@
 		24379A8A25458A7C008B1E26 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				24BF441625617E2A00C0B4E4 /* RemoteConfiguration */,
 				245343D1254B71DB00726E8F /* Data Model Layer */,
 				246C81F12549AD58009AD69F /* Data */,
 				246C81E725499D34009AD69F /* Services */,
@@ -919,6 +920,13 @@
 				24A70F3C255063E5008C6AB2 /* ShareOptionsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		24BF441625617E2A00C0B4E4 /* RemoteConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RemoteConfiguration;
 			sourceTree = "<group>";
 		};
 		24FFEF58254C4DFE00257893 /* Home */ = {
