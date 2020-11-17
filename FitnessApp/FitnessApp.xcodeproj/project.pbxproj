@@ -35,6 +35,7 @@
 		241A0FAE254DF0ED00095693 /* VideoPreviewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0FA9254DF0ED00095693 /* VideoPreviewButton.swift */; };
 		241A0FAF254DF0ED00095693 /* RoutineInfoContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0FAA254DF0ED00095693 /* RoutineInfoContent.swift */; };
 		241A0FB0254DF0ED00095693 /* RoutineExerciseTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A0FAB254DF0ED00095693 /* RoutineExerciseTable.swift */; };
+		2423DA612563DA5600913141 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2423DA602563DA5600913141 /* GoogleService-Info.plist */; };
 		24379A8C25458A7C008B1E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379A8B25458A7C008B1E26 /* AppDelegate.swift */; };
 		24379A8E25458A7C008B1E26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379A8D25458A7C008B1E26 /* SceneDelegate.swift */; };
 		24379A9025458A7C008B1E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379A8F25458A7C008B1E26 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 		244E9431254B289F008AE146 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9430254B289F008AE146 /* Alert.swift */; };
 		244E943A254B2912008AE146 /* CoreModuleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E9439254B2912008AE146 /* CoreModuleExtension.swift */; };
 		244E949A254B52C7008AE146 /* CoreModuleLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 244E9498254B52C7008AE146 /* CoreModuleLocalizable.strings */; };
+		244FFE2B2562DE2F0088A4A8 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 244FFE2A2562DE2F0088A4A8 /* RemoteConfigDefaults.plist */; };
 		245343C8254B6CE200726E8F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343C7254B6CE200726E8F /* SignupViewController.swift */; };
 		245343CD254B6F4300726E8F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343CC254B6F4300726E8F /* CreateAccountViewController.swift */; };
 		245343ED254B723E00726E8F /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245343D4254B723E00726E8F /* BaseRepository.swift */; };
@@ -96,6 +98,8 @@
 		24BD990A25557B9B00F6CE3B /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD990925557B9B00F6CE3B /* ExploreViewModel.swift */; };
 		24BD990F25557C6000F6CE3B /* MyGoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD990E25557C6000F6CE3B /* MyGoalViewModel.swift */; };
 		24BD99132555ACB200F6CE3B /* Pods_FitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B9B6528413D883439C55EB /* Pods_FitnessApp.framework */; };
+		24BF441825617F0D00C0B4E4 /* GenericRemoteConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF441725617F0D00C0B4E4 /* GenericRemoteConfig.swift */; };
+		24BF442025617F8700C0B4E4 /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BF441F25617F8700C0B4E4 /* RemoteConfigManager.swift */; };
 		24FFEF3B254C26F400257893 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF3A254C26F400257893 /* MainCoordinator.swift */; };
 		24FFEF40254C27D800257893 /* ExploreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF3F254C27D800257893 /* ExploreCoordinator.swift */; };
 		24FFEF45254C280D00257893 /* MyGoalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FFEF44254C280D00257893 /* MyGoalCoordinator.swift */; };
@@ -176,6 +180,7 @@
 		241A0FA9254DF0ED00095693 /* VideoPreviewButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPreviewButton.swift; sourceTree = "<group>"; };
 		241A0FAA254DF0ED00095693 /* RoutineInfoContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineInfoContent.swift; sourceTree = "<group>"; };
 		241A0FAB254DF0ED00095693 /* RoutineExerciseTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineExerciseTable.swift; sourceTree = "<group>"; };
+		2423DA602563DA5600913141 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		24379A8825458A7C008B1E26 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24379A8B25458A7C008B1E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24379A8D25458A7C008B1E26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +201,7 @@
 		244E9430254B289F008AE146 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		244E9439254B2912008AE146 /* CoreModuleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreModuleExtension.swift; sourceTree = "<group>"; };
 		244E9499254B52C7008AE146 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CoreModuleLocalizable.strings; sourceTree = "<group>"; };
+		244FFE2A2562DE2F0088A4A8 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		245343C7254B6CE200726E8F /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		245343CC254B6F4300726E8F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		245343D4254B723E00726E8F /* BaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
@@ -242,6 +248,8 @@
 		24AD864225475D1F00C57EDC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		24BD990925557B9B00F6CE3B /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		24BD990E25557C6000F6CE3B /* MyGoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalViewModel.swift; sourceTree = "<group>"; };
+		24BF441725617F0D00C0B4E4 /* GenericRemoteConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericRemoteConfig.swift; sourceTree = "<group>"; };
+		24BF441F25617F8700C0B4E4 /* RemoteConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
 		24FFEF3A254C26F400257893 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		24FFEF3F254C27D800257893 /* ExploreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCoordinator.swift; sourceTree = "<group>"; };
 		24FFEF44254C280D00257893 /* MyGoalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalCoordinator.swift; sourceTree = "<group>"; };
@@ -449,6 +457,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2423DA652563DA6F00913141 /* GoogleService */ = {
+			isa = PBXGroup;
+			children = (
+				2423DA602563DA5600913141 /* GoogleService-Info.plist */,
+			);
+			path = GoogleService;
+			sourceTree = "<group>";
+		};
 		24379A7F25458A7C008B1E26 = {
 			isa = PBXGroup;
 			children = (
@@ -552,6 +568,14 @@
 				244E9439254B2912008AE146 /* CoreModuleExtension.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		244FFE292562DE130088A4A8 /* DefaultsData */ = {
+			isa = PBXGroup;
+			children = (
+				244FFE2A2562DE2F0088A4A8 /* RemoteConfigDefaults.plist */,
+			);
+			path = DefaultsData;
 			sourceTree = "<group>";
 		};
 		245343C6254B6CC300726E8F /* Signup */ = {
@@ -925,6 +949,10 @@
 		24BF441625617E2A00C0B4E4 /* RemoteConfiguration */ = {
 			isa = PBXGroup;
 			children = (
+				2423DA652563DA6F00913141 /* GoogleService */,
+				244FFE292562DE130088A4A8 /* DefaultsData */,
+				24BF441725617F0D00C0B4E4 /* GenericRemoteConfig.swift */,
+				24BF441F25617F8700C0B4E4 /* RemoteConfigManager.swift */,
 			);
 			path = RemoteConfiguration;
 			sourceTree = "<group>";
@@ -1108,7 +1136,9 @@
 				24379A9525458A7F008B1E26 /* Assets.xcassets in Resources */,
 				240A89D0254D9E010094EE7B /* Localizable.strings in Resources */,
 				2409FE72254F08ED0082C839 /* bulletTrain.mp4 in Resources */,
+				244FFE2B2562DE2F0088A4A8 /* RemoteConfigDefaults.plist in Resources */,
 				24AD864325475D1F00C57EDC /* README.md in Resources */,
+				2423DA612563DA5600913141 /* GoogleService-Info.plist in Resources */,
 				240A89CB254D91190094EE7B /* Media.xcassets in Resources */,
 				24379A9325458A7C008B1E26 /* Main.storyboard in Resources */,
 			);
@@ -1224,6 +1254,7 @@
 				241A0F8E254DE8B400095693 /* PictureInfoView.swift in Sources */,
 				245343F8254B723E00726E8F /* User.swift in Sources */,
 				246C82422549CADC009AD69F /* CreatingAccount.swift in Sources */,
+				24BF442025617F8700C0B4E4 /* RemoteConfigManager.swift in Sources */,
 				241A0FB0254DF0ED00095693 /* RoutineExerciseTable.swift in Sources */,
 				2453441D254B7CB700726E8F /* InputContentView.swift in Sources */,
 				24A70F3E255063E5008C6AB2 /* ShareOptionsView.swift in Sources */,
@@ -1245,6 +1276,7 @@
 				2453441E254B7CB700726E8F /* ContentView.swift in Sources */,
 				24534421254B7CB700726E8F /* ProfileQuestion.swift in Sources */,
 				246C82042549AF46009AD69F /* OnBoardingData.swift in Sources */,
+				24BF441825617F0D00C0B4E4 /* GenericRemoteConfig.swift in Sources */,
 				246C81EA25499D5D009AD69F /* AppSettingsManager.swift in Sources */,
 				2453441F254B7CB700726E8F /* HeaderView.swift in Sources */,
 				246C81F52549ADDB009AD69F /* AppDataManager.swift in Sources */,

@@ -15,6 +15,8 @@ final class AppCoordinator: Coordinator {
     
     var navigationController: UINavigationController
     
+    let remoteConfigManager = RemoteConfigManager.shared
+    
     private let window: UIWindow
     
     init(window: UIWindow, navigation: UINavigationController) {
@@ -22,6 +24,8 @@ final class AppCoordinator: Coordinator {
         self.navigationController = navigation
         window.configure(with: navigation)
         navigation.configure()
+        remoteConfigManager.setupRemoteConfig()
+        remoteConfigManager.fetchAndActivateRemoteConfig()
     }
 
     convenience init(window: UIWindow = UIWindow()) {

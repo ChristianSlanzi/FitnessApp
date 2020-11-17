@@ -23,7 +23,7 @@ class MainCoordinator: NSObject, Coordinator {
     func start() {
         if started { return }
         
-        let navbarModel = NavigationBarModelView(titleText: "MY\nGOAL",
+        let navbarModel = NavigationBarModelView(titleText: RemoteConfigManager.shared.getValueForKey(.homeText) as? String,//"MY\nGOAL",
                                                  subtitleText: "February",
                                                  imageName: "Profile")
         
